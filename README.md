@@ -33,6 +33,7 @@ __3) Anaconda:__
 - Environments allow you to manage specific versions of Python and other packages for a particular project. By specifying exact dependency versions, Conda environments make it easier to share code, enabling others to recreate the same environment without issues.
 - Conda simplifies package management with a single tool for installing, updating, and removing packages, making it more user-friendly than manual dependency management.
 - With Conda, you can easily switch between different Python versions for different projects, particularly beneficial for projects with specific Python version requirements.
+- Use conda prompt or command promt or vs code powershell (ctrl + `)
 
 __Conda commands:__
 | Command                                                                      | Use                                                                                                              |
