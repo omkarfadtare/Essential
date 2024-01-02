@@ -60,12 +60,17 @@ __Conda commands:__
 | conda install -c channel_name package_name                                   | Install packages from a specific channel to a currently active environment                                       |
 | conda install -c channel_name package_name=1.2.3                             | Install packages from a specific channel and version to a currently active environment                           |
 | conda install --file requirements.txt                                        | Install packages using a .TXT file to currently active environment                                               |
+| pip install -r requirements.txt                                              | Install packages using a .TXT file to a currently active environment (preferred way)                             |
 | conda install --name your_existing_env_name --file requirements.txt          | Install packages using a .TXT file to a specified environment                                                    |
-| conda env update --name your_existing_env_name --file environment.yml        | Install packages using a .YML file to a currently active environment                                               |
-| conda list --export > requirements.txt                                       | To Generate .TXT file from a currently active environment                                                               |
-| conda env export --name your_env_name > requirements.txt                     | To Generate .TXT from specified conda environment                                                                |
-| conda list --export > environment.yml                                        | To Generate .YML from a currently active environment                                                                    |
-| conda env export --name your_env_name > environment.yml                      | To Generate .YML from a specified conda environment                                                              |
+| conda env update --name your_existing_env_name --file environment.yml        | Install packages using a .YML file to a currently active environment                                             |
+| conda list --export > environment.yml                                        | To generate .YML from a currently active environment (error due to formatting)                                   |
+| conda env export --name your_env_name > environment.yml                      | To generate .YML from a specified conda environment (error due to formatting)                                    |
+| conda list --export > requirements.txt                                       | To generate .TXT file from a currently active environment (error due to formatting)                              |
+| conda env export --name your_env_name > requirements.txt                     | To generate .TXT from specified conda environment (error due to formatting)                                      |
+| conda list -e > requirements.txt                                             | To generate .TXT file from a currently active environment (error due to formatting)                              |
+| pip freeze > requirements.txt                                                | To generate .TXT file from a currently active environment (error due to formatting)                              |
+| pip list --format = freeze > requirements.txt                                | To generate .TXT file from a currently active environment (works fine this is the preferred way)                 |
+
 
 __Ways to specify version numbers:__
 | Specification         | Result                              |
