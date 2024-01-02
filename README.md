@@ -5,6 +5,7 @@ __1) Pycharm:__
 - You can download PyCharm from (https://www.jetbrains.com/pycharm/download/?section=windows). There are two versions available i.e. Professional version and Community version (free).
 - After successfully installing PyCharm, you need to add new environment variables. Setting environment variables for PyCharm can be done at the system level or by using PyCharm run configuration.
 - To set environment variables at the system level on Windows, go to (Edit the system environment variables -> Environment variables -> under User variables, select Path -> Click Edit -> Click New -> Add [C:\Users\omkar\AppData\Local\Programs\Python\Python312\ & C:\Users\omkar\AppData\Local\Programs\Python\Python312\Scripts] -> Click Ok -> Click Ok -> Click Ok.
+
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/f2b570b0-fd4b-4590-9341-b337d97c223c)
 
 __2) VS code:__
@@ -14,6 +15,7 @@ __2) VS code:__
 - Working with VS Code can enhance your efficiency as a data scientist. It can manage your entire data science project lifecycle.
 - You can download VS Code from (https://code.visualstudio.com/download)
 - To open VS Code in specific folder, right click -> Open in terminal -> run code command.
+
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/2f255810-d9f8-4485-b5fa-b4bf38c70e4c)
 
 __3) Anaconda:__
@@ -22,6 +24,7 @@ __3) Anaconda:__
 - After successfully installing Anaconda, you need to add new environment variables. Setting environment variables for Jupyter can be done at the system level.
 - To set environment variables at the system level on Windows, go to (Edit the system environment variables -> Environment variables -> under User variables, select Path -> Click Edit -> Click New -> Add [C:\Users\omkar\anaconda3\ & C:\Users\omkar\anaconda3\Scripts] -> Click Ok -> Click Ok -> Click Ok.
 - To open Jupyter in specific folder, right click -> Open in terminal -> run jupyter notebook command.
+
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/3fb73c31-00e7-432a-9ecd-a7745ba61e4e)
 
 ## Conda environment:
