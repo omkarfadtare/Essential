@@ -61,10 +61,10 @@ __Conda commands:__
 | conda install -c channel_name package_name=1.2.3                             | Install packages from a specific channel and version to a currently active environment                           |
 | conda install --file requirements.txt                                        | Install packages using a .TXT file to currently active environment                                               |
 | conda install --name your_existing_env_name --file requirements.txt          | Install packages using a .TXT file to a specified environment                                                    |
-| conda env update --name your_existing_env_name --file environment.yml        | Install packages using a .YML file to currently active environment                                               |
-| conda list --export > requirements.txt                                       | To Generate .TXT file from an existing environment                                                               |
+| conda env update --name your_existing_env_name --file environment.yml        | Install packages using a .YML file to a currently active environment                                               |
+| conda list --export > requirements.txt                                       | To Generate .TXT file from a currently active environment                                                               |
 | conda env export --name your_env_name > requirements.txt                     | To Generate .TXT from specified conda environment                                                                |
-| conda list --export > environment.yml                                        | To Generate .YML from an existing environment                                                                    |
+| conda list --export > environment.yml                                        | To Generate .YML from a currently active environment                                                                    |
 | conda env export --name your_env_name > environment.yml                      | To Generate .YML from a specified conda environment                                                              |
 
 __Ways to specify version numbers:__
