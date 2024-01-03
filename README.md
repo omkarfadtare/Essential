@@ -88,12 +88,39 @@ __Difference between yml and txt file:__
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/2b7eb970-556d-4f3c-ae8f-15294df568c8)
 
-## Git:
-- Git is a version control system that helps you keep track of changes in your files over time. It allows multiple people to work on the same project simultaneously, tracks modifications, and helps you collaborate with others while maintaining a history of changes.
-- Git helps you manage and organize your project's development, making it easier to work with others and keep a record of all the changes made to your files.
-- a version control system (VCS) is a tool that helps you keep track of changes to your files over time. It allows you to save different versions of your work, so you can go back to earlier states if needed.
-- Git Kraken, Github dekstop, bitbucket, gitlab (As a programmer its always good to use terminal)
-- Git is a tool that tracks changes in your code over time whereas github is a website to host your repository online
+## Git & Github:
+
+1) Git:
+- Git is a distributed version control system or tool that enables collaboration among multiple contributors by allowing them to work on the same project concurrently.
+- It helps you manage and track changes in your code or project over time.
+- Git can be used through the command line interface, but various GUI tools, such as GitKraken or GitHub Desktop, provide a visual interface for those who prefer not to use the command line interface. As a programmer its always good to use terminal.
+
+2) GitKraken:
+- GitKraken is a graphical user interface (GUI) for Git, providing a visual representation of your repositories. Visualizes branches, commits, and merges.
+
+3) Github dekstop:
+- Github dekstop is another graphical user interface (GUI) for Git, providing visual representations and simplifying common Git operations.
+
+4) SVN (Subversion):
+- SVN is a centralised version control system that helps software developers manage and track changes in their code over time.
+- It allows multiple people to work on the same project simultaneously, keeping a history of modifications, and facilitating collaboration. 
+
+GitHub, GitLab, and Bitbucket are online platforms where you can store, collaborate, and manage your code that uses Git as the version control system. While they share the fundamental purpose of hosting repositories, they may differ in additional features, integrations, and the overall development ecosystem they offer.
+
+1) GitHub:
+- GitHub is a web-based platform, owned by Microsoft, for hosting and collaborating on Git repositories. It's like a cloud-based space to store and work on your code.
+- It provides Git repository hosting, code collaboration, issue tracking, and integration with various development tools.
+  
+2) GitLab:
+- GitLab is also a web-based platform for hosting Git repositories, similar to GitHub.
+- It offers a complete DevOps platform, encompassing not only version control but also continuous integration and deployment (CICD).
+- It provides Git repository hosting, continuous integration, deployment tools, code review, issue tracking, and more—all within a single platform.
+
+3) Bitbucket:
+- Bitbucket is also a web-based platform for hosting Git repositories, owned by Atlassian, similar to GitHub and GitLab.
+- It provides Git repository hosting, code collaboration, integration with other Atlassian products (such as Jira), and support for both Git and Mercurial repositories.
+
+
 
 - clone: Bring a repository that is hosted somewhere like github into a folder on your local machine
 - add: track your files and changes in Git
