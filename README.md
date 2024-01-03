@@ -103,3 +103,6 @@ __Difference between yml and txt file:__
 
 - new repo > repo name > create repo
 - 
+![image](https://github.com/omkarfadtare965/Essential/assets/154773580/265fe443-8a9b-4084-bbc8-47c36e234379)
+
+
