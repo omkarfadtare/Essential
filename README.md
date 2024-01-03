@@ -102,8 +102,19 @@ __Difference between yml and txt file:__
 - pull: download changes from remote repo to your local machine, the opposite of push
 
 - new repo > repo name > create repo
-- 
+- This is how you can see the commits you have made in your file:
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/265fe443-8a9b-4084-bbc8-47c36e234379)
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/30ff90a9-db2d-48bc-bc34-c56bd42c1ec5)
 
+![image](https://github.com/omkarfadtare965/Essential/assets/154773580/19b08ee4-8a37-44c2-80cc-ebaeb22c0214)
+
+gree: Added
+redd: Deleted
+White: as it is
+
+- Install git bash; to check whther you have git bash or not then type in command git --version in cmd
+- Open git bash
+
+## pulling repo from remote to local:
+- 
