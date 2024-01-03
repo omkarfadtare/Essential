@@ -121,6 +121,7 @@ GitHub, GitLab, and Bitbucket are online platforms where you can store, collabor
 - It provides Git repository hosting, code collaboration, integration with other Atlassian products (such as Jira), and support for both Git and Mercurial repositories.
 
 
+__git commands:__
 
 - clone: Bring a repository that is hosted somewhere like github into a folder on your local machine
 - add: track your files and changes in Git
