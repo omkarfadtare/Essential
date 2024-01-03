@@ -88,75 +88,74 @@ __Difference between yml and txt file:__
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/2b7eb970-556d-4f3c-ae8f-15294df568c8)
 
-## Git & Github:
+## Version vontrol system (Git):
+Remote repository is a repository on GitHub account, whereas local repository is repository in your local machine/computer.
 
-1) Git:
+__1) Git:__
 - Git is a distributed version control system or tool that enables collaboration among multiple contributors by allowing them to work on the same project concurrently.
 - It helps you manage and track changes in your code or project over time.
 - Git can be used through the command line interface, but various GUI tools, such as GitKraken or GitHub Desktop, provide a visual interface for those who prefer not to use the command line interface. As a programmer its always good to use terminal.
 
-2) GitKraken:
+__2) GitKraken:__
 - GitKraken is a graphical user interface (GUI) for Git, providing a visual representation of your repositories. Visualizes branches, commits, and merges.
 
-3) Github dekstop:
+__3) Github dekstop:__
 - Github dekstop is another graphical user interface (GUI) for Git, providing visual representations and simplifying common Git operations.
 
-4) SVN (Subversion):
+__4) SVN (Subversion):__
 - SVN is a centralised version control system that helps software developers manage and track changes in their code over time.
-- It allows multiple people to work on the same project simultaneously, keeping a history of modifications, and facilitating collaboration. 
+- It allows multiple people to work on the same project simultaneously, keeping a history of modifications, and facilitating collaboration.
 
+## Repository hosting services (GitHub): 
 GitHub, GitLab, and Bitbucket are online platforms where you can store, collaborate, and manage your code that uses Git as the version control system. While they share the fundamental purpose of hosting repositories, they may differ in additional features, integrations, and the overall development ecosystem they offer.
 
-1) GitHub:
+__1) GitHub:__
 - GitHub is a web-based platform, owned by Microsoft, for hosting and collaborating on Git repositories. It's like a cloud-based space to store and work on your code.
 - It provides Git repository hosting, code collaboration, issue tracking, and integration with various development tools.
   
-2) GitLab:
+__2) GitLab:__
 - GitLab is also a web-based platform for hosting Git repositories, similar to GitHub.
 - It offers a complete DevOps platform, encompassing not only version control but also continuous integration and deployment (CICD).
 - It provides Git repository hosting, continuous integration, deployment tools, code review, issue tracking, and more—all within a single platform.
 
-3) Bitbucket:
+__3) Bitbucket:__
 - Bitbucket is also a web-based platform for hosting Git repositories, owned by Atlassian, similar to GitHub and GitLab.
 - It provides Git repository hosting, code collaboration, integration with other Atlassian products (such as Jira), and support for both Git and Mercurial repositories.
 
-remote repo is a repo on github account
-local repo is repo on computer
-
-__Authentication Methods in Git:__
+## Authentication methods in git:
 When connecting your local machine to a GitHub account or remote repository in Git, you need an authentication method. Here are several methods commonly used:
 
-1) HTTPS:
-- Utilizes a username and password or a Personal Access Token (PAT) for authentication.
+__1) HTTPS:__
+- Utilizes a username and password or a Personal Access Token (PAT) for authentication but support for password authentication was removed in August 2021 so PAT is used for authentication..
 - Easy to set up, but may require entering credentials again and again.
-- Support for password authentication was removed in August 2021.
 
-2) Personal Access Tokens (PAT):
-- A secure alternative for HTTPS authentication.
-Setting up Personal access token:
- - Generated in GitHub: Settings > Developer settings > Personal access tokens > Tokens(classic) > Generate new token > Generate new token (classic) > enter your github password > confirm > You can set expiry date to the token > Select scope of token > Generate token.
- - After that, use the token as a password during Git operations.
+> Setting up Personal access token (PAT):
+- GitHub settings > Developers settings > Personal access token > Token (classic) > Generate new token > Generate new token (classic) > enter your GitHub password > Confirm > Set expiry date for token > Select scope of token > Generate token.
+- After that, use that token as a password during Git operations.
 
-3)GCM (Git Credential Managers):
+__2) GCM (Git Credential Managers):__
 - Enhances authentication by caching credentials.
 - One-time process, often requires logging in with a browser.
-Setting up GCM:
- - Install Git Credential Manager (Installed at the time of installing git bash ).
- - Log in with your credentials using a browser and your are done.
 
-4) SSH Keys:
+> Setting up Git Credential Managers (GCM):
+- Install Git Credential Manager (Installed at the time of installing git bash ).
+- If GCM is not installed, use command (git credential-manager install) 
+- Log in with your credentials using a browser and your are done.
+
+__3) SSH Keys:__
 - Provides a more secure method for authentication.
 - Requires generating an SSH key pair and adding the public key to your GitHub account.
 - Enables secure communication via the Secure Shell (SSH) protocol.
-Setting up SSH keys:
- - Generate an SSH key pair on your local machine: ssh-keygen -t rsa -b 4096 -C "email@example.com" -f /path/to/key
- - ssh-keygen -t rsa(type of encryption) -b 4096(strength of encryption) -C "email@example.com"
- - Copy the public key (id_rsa.pub) to your GitHub account.
- - Ensure the private key is kept secure on your local machine.
- - Verify SSH Key Addition:
- - Start the SSH agent: eval "$(ssh-agent -s)"
- - Add SSH Key to the SSH Agent: ssh-add /path/to/private/key
- - Verify the key is added: ssh-add -l
+
+> Setting up SSH keys:
+- Generate an SSH key pair on your local machine using command (ssh-keygen -t rsa -b 4096 -C "omkarfadtare965@gmail.com" -f my_ssh_key)
+- in above command rsa is type of encryption and 4096 is strength of encryption.
+- Copy the public key (id_rsa.pub) to your GitHub account.
+- Ensure the private key is kept secure on your local machine.
+- Verify SSH Key Addition:
+- Start the SSH agent: eval "$(ssh-agent -s)"
+- Add SSH Key to the SSH Agent: ssh-add /path/to/private/key
+- Verify the key is added: ssh-add -l
  - Add the SSH public key to your GitHub account.
 
 
@@ -179,7 +178,7 @@ When you first install git and try to clone or push github account or remote rep
 1) HTTPS:
 2) SSH keys:
 3) GCM (Git credential managers):
-4) Persoal access tokens (PAT)
+4) Persoal access tokens (PAT):
 
 - When you write a code on your local machine and push it to the github account or remote repository, you need a method to connect your remote repo to your local machine.
 - There are two ways you can connect your remote repository to your local machine either by HTTPS url or SSH url.
