@@ -118,3 +118,4 @@ White: as it is
 
 ## pulling repo from remote to local:
 - 
+- Hello there I am taling from my local system 
