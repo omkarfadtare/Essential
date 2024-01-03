@@ -87,3 +87,19 @@ __Difference between yml and txt file:__
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/7ac97e53-ee7f-403d-bcfc-8902d0b8d799)
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/2b7eb970-556d-4f3c-ae8f-15294df568c8)
+
+## Git:
+- Git is a version control system that helps you keep track of changes in your files over time. It allows multiple people to work on the same project simultaneously, tracks modifications, and helps you collaborate with others while maintaining a history of changes.
+- Git helps you manage and organize your project's development, making it easier to work with others and keep a record of all the changes made to your files.
+- a version control system (VCS) is a tool that helps you keep track of changes to your files over time. It allows you to save different versions of your work, so you can go back to earlier states if needed.
+- Git Kraken, Github dekstop, bitbucket, gitlab (As a programmer its always good to use terminal)
+- Git is a tool that tracks changes in your code over time whereas github is a website to host your repository online
+
+- clone: Bring a repository that is hosted somewhere like github into a folder on your local machine
+- add: track your files and changes in Git
+- commit: save your files in git
+- push: upload git commits to remote repo like github
+- pull: download changes from remote repo to your local machine, the opposite of push
+
+- new repo > repo name > create repo
+- 
