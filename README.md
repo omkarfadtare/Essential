@@ -155,41 +155,42 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
 - Use Conda prompt or Command promt or VS Code powershell (ctrl + `) for Conda operations.
 
 __Conda commands:__
-| Command                                                                      | Use                                                                                                              |
-|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| conda info                                                                   | Used to verify whether conda is installed or not                                                                 |
-| conda --version                                                              | Used to check conda version                                                                                      |
-| conda update conda                                                           | Used to update conda to the latest version                                                                       |
-| conda env list                                                               | Used to get a list of all my environments (active environment is shown with *)                                   |
-| conda list                                                                   | List all packages and versions installed in an active environment                                                |
-| conda create --name your_env_name                                            | Create a new environment                                                                                         |
-| conda create --name your_env_name python=3.x                                 | Create a new environment with a specific python version                                                          |
-| conda create --name your_env_name python=3.x package1 package2 ...           | Create a new environment with specific packages                                                                  |
-| conda env create --file environment.yml                                      | Create a new environment from a YAML file (in yml file env_name is already present)                              |
-| conda create --name your_env_name --file requirements.txt                    | Create a new environment from a TXT file (in txt file env_name is not present so that you need to give env_name) |
-| conda create --name your_env_name python=3.x && conda activate your_env_name | Create a new environment and activate it                                                                         |
-| conda activate your_env_name                                                 | Activate specified environment                                                                                   |
-| conda deactivate your_env_name                                               | Deactivate specified environment and switch back to base environment                                             |
-| conda env remove --name your_env_name                                        | Delete specified environment                                                                                     |
-| conda create --clone source_env_name --name new_env_name                     | To make exact copy of a specified conda environment                                                              |
-| conda install package_name                                                   | Install a specific package to a currently active environment                                                     |
-| conda install --name your_env_name package_name                              | Install packages in a specific environment                                                                       |
-| conda update package_name                                                    | Update a package in the current environment                                                                      |
-| conda install package_name=1.2.3                                             | Install a specific version of a package to a currently active environment                                        |
-| conda install package1 package2 package3                                     | Install multiple packages at once to a currently active environment                                              |
-| conda install -c channel_name package_name                                   | Install packages from a specific channel to a currently active environment                                       |
-| conda install -c channel_name package_name=1.2.3                             | Install packages from a specific channel and version to a currently active environment                           |
-| conda install --file requirements.txt                                        | Install packages using a .TXT file to currently active environment                                               |
-| pip install -r requirements.txt                                              | Install packages using a .TXT file to a currently active environment (preferred way)                             |
-| conda install --name your_existing_env_name --file requirements.txt          | Install packages using a .TXT file to a specified environment                                                    |
-| conda env update --name your_existing_env_name --file environment.yml        | Install packages using a .YML file to a currently active environment                                             |
-| conda list --export > environment.yml                                        | To generate .YML from a currently active environment (error due to formatting)                                   |
-| conda env export --name your_env_name > environment.yml                      | To generate .YML from a specified conda environment (error due to formatting)                                    |
-| conda list --export > requirements.txt                                       | To generate .TXT file from a currently active environment (error due to formatting)                              |
-| conda env export --name your_env_name > requirements.txt                     | To generate .TXT from specified conda environment (error due to formatting)                                      |
-| conda list -e > requirements.txt                                             | To generate .TXT file from a currently active environment (error due to formatting)                              |
-| pip freeze > requirements.txt                                                | To generate .TXT file from a currently active environment (error due to formatting)                              |
-| pip list --format = freeze > requirements.txt                                | To generate .TXT file from a currently active environment (works fine this is the preferred way)                 |
+| Command                                                                      | Use                                                                                                                |
+|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| conda info                                                                   | Used to verify whether Conda is installed or not                                                                   |
+| conda --version                                                              | Used to check Conda version                                                                                        |
+| conda update conda                                                           | Used to update Conda to the latest version                                                                         |
+| conda env list                                                               | Used to get a list of all environments (active environment is shown with *)                                        |
+| conda list                                                                   | List all packages and versions installed in an active environment                                                  |
+| conda create --name your_env_name                                            | Create a new environment                                                                                           |
+| conda create --name your_env_name python=3.x                                 | Create a new environment with a specific python version                                                            |
+| conda create --name your_env_name python=3.x package1 package2 ...           | Create a new environment with a specific python version and specific packages                                      |
+| conda env create --file environment.yml                                      | Create a new environment from a .YAML file (in .YML file env_name is already present)                              |
+| conda create --name your_env_name --file requirements.txt                    | Create a new environment from a .TXT file (in .TXT file env_name is not present so that you need to give env_name) |
+| conda create --name your_env_name python=3.x && conda activate your_env_name | Create a new environment with a specific python version and activate it                                            |
+| conda activate your_env_name                                                 | Activate specific environment                                                                                      |
+| conda deactivate your_env_name                                               | Deactivate specific environment and switch back to base environment                                                |
+| conda env remove --name your_env_name                                        | Delete specific environment                                                                                        |
+| conda create --clone source_env_name --name new_env_name                     | To make exact copy of a specific environment                                                                       |
+| conda install package_name                                                   | Install a specific package to a currently active environment                                                       |
+| conda install --name your_env_name package_name                              | Install packages in a specific environment                                                                         |
+| conda update package_name                                                    | Update a package in a currently active environment                                                                 |
+| conda install package_name=1.2.3                                             | Install a specific version of a package to a currently active environment                                          |
+| conda install package1 package2 package3                                     | Install multiple packages at once to a currently active environment                                                |
+| conda install -c channel_name package_name                                   | Install packages from a specific channel to a currently active environment                                         |
+| conda install -c channel_name package_name=1.2.3                             | Install packages from a specific channel with a specific python version to a currently active environment          |
+| conda install --file requirements.txt                                        | Install packages using a .TXT file to a currently active environment                                               |
+| pip install -r requirements.txt                                              | Install packages using a .TXT file to a currently active environment (preferred way)                               |
+| conda install --name your_existing_env_name --file requirements.txt          | Install packages using a .TXT file to a specific environment                                                       |
+| conda env update --name your_existing_env_name --file environment.yml        | Install packages using a .YML file to a currently active environment                                               |
+| conda list --export > environment.yml                                        | To generate .YML file from a currently active environment (error due to formatting)                                |
+| conda env export --name your_env_name > environment.yml                      | To generate .YML file from a specific environment (error due to formatting)                                        |
+| conda list --export > requirements.txt                                       | To generate .TXT file from a currently active environment (error due to formatting)                                |
+| conda env export --name your_env_name > requirements.txt                     | To generate .TXT file from a specific environment (error due to formatting)                                        |
+| conda list -e > requirements.txt                                             | To generate .TXT file from a currently active environment (error due to formatting)                                |
+| pip freeze > requirements.txt                                                | To generate .TXT file from a currently active environment (error due to formatting)                                |
+| pip list --format = freeze > requirements.txt                                | To generate .TXT file from a currently active environment (works fine this is the preferred way)                   |
+
 
 
 __Ways to specify version numbers:__
