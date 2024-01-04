@@ -97,26 +97,29 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
 - PyCharm is an integrated development environment (IDE) specifically designed for Python development.
 - You can download PyCharm [here](https://www.jetbrains.com/pycharm/download/?section=windows). There are two versions available i.e. Professional version and Community version (free).
 - After successfully installing PyCharm, you need to add new environment variables. Setting environment variables for PyCharm can be done at system level or by using PyCharm run configuration.
-- To set environment variables at the system level on Windows, go to
-  - Edit the system environment variables
-  -  Environment variables
-  -  Under user variables select Path
-  -  Click Edit
-  -  Click New
-  -  Add (C:\Users\omkar\AppData\Local\Programs\Python\Python312\ & C:\Users\omkar\AppData\Local\Programs\Python\Python312\Scripts)
-  -  Click Ok
-  -  Click Ok
-  -  Click Ok.
-- You can find path & version of python using below commands
+- To set environment variables at the system level on Windows:
+ - Go to, Edit the system environment variables
+  - Environment variables
+  - Under user variables select Path
+  - Click Edit
+  - Click New
+  - Add (C:\Users\omkar\AppData\Local\Programs\Python\Python312\ & C:\Users\omkar\AppData\Local\Programs\Python\Python312\Scripts)
+  - Click Ok
+  - Click Ok
+  - Click Ok
+- You can find path and version of Python using below commands
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/f2b570b0-fd4b-4590-9341-b337d97c223c)
 
-__2) VS code:__
-- VS Code is a free integrated development environment (IDE) developed by Microsoft.
+### 2) VS code:
+- VS Code is a free and open source integrated development environment (IDE) developed by Microsoft.
 - It supports multiple languages and comes with features such as debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git, which is very convenient for version control.
 - It offers numerous settings and a vast marketplace with extensions for adding new languages, themes, debuggers, and connecting additional services.
 - Working with VS Code can enhance your efficiency as a data scientist. It can manage your entire data science project lifecycle.
-- You can download VS Code from (https://code.visualstudio.com/download)
-- To open VS Code in specific folder, right click -> Open in terminal -> run code command.
+- You can download VS Code [here](https://code.visualstudio.com/download).
+- To open VS Code in specific folder:
+  - Right click
+  - Open in terminal
+  - Run code command
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/2f255810-d9f8-4485-b5fa-b4bf38c70e4c)
 
