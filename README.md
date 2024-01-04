@@ -270,8 +270,8 @@ __1) HTTPS:__
 __2) GCM (Git Credential Managers):__
 - Enhances authentication by caching credentials.
 - GCM is a one-time process, often requires logging in with a browser.
-- By default, GCM is installed at the time of Git installation. But if it is not installed follow below steps:
-- If GCM is not installed in system you can download GCM from [here](https://github.com/git-ecosystem/git-credential-manager/releases).
+- By default, GCM is installed at the time of Git installation.
+- If GCM is not installed in system you can download GCM from [here](https://github.com/git-ecosystem/git-credential-manager/releases) 
 
 > Step to check whether GCM is installed or not using below command in Git Bash:
   - ```ruby
@@ -301,17 +301,17 @@ __3) SSH (Secure Shell) Keys:__
     eval "$(ssh-agent -s)"
     ssh-add E:/file_path
     ```
-  - Add copied SSH publiic key to GitHub or Git hosting services, go to GitHub account
+  - Add copied SSH public key to GitHub or Git hosting services, go to GitHub account
   - Settings
   - SSH and GPG keys
   - New SSH key
   - Give a title (just for your reference)
   - Paste SSH public key
-  - Add SSH key 
+  - Add SSH key
+  - Enter Github password
+  - Confirm
 
-
-
-__git commands:__
+### Git commands:
 
 - clone: Bring a repository that is hosted somewhere like github into a folder on your local machine
 - add: track your files and changes in Git
