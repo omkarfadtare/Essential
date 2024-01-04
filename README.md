@@ -191,9 +191,6 @@ __Conda commands:__
 | pip freeze > requirements.txt                                                | To generate .TXT file from a currently active environment (error due to formatting)                                |
 | pip list --format = freeze > requirements.txt                                | To generate .TXT file from a currently active environment (works fine this is the preferred way)                   |
 
-
-
-
 __Ways to specify version numbers:__
 | Specification         | Result                              |
 |-----------------------|-------------------------------------|
@@ -203,7 +200,7 @@ __Ways to specify version numbers:__
 | "numpy=1.11.1|1.11.3" | 1.11.1, 1.11.3                      |
 | "numpy>=1.8,          | 1.8, 1.9, not 2.0                   |
 
-__Difference between yml and txt file:__
+__Difference between .YML and .TXT file:__
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/7ac97e53-ee7f-403d-bcfc-8902d0b8d799)
 
