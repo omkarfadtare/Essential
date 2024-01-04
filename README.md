@@ -146,17 +146,13 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/3fb73c31-00e7-432a-9ecd-a7745ba61e4e)
 
-
-
-
-
 ## Conda environment:
-- Conda environments provide a way to isolate different projects, preventing conflicts between dependencies and package versions required by different projects.
+- Conda environment provides a way to isolate different projects, preventing conflicts between dependencies and package versions required by different projects.
 - Creating a Conda environment is crucial for maintaining a clean, organized, and reproducible development environment. It helps manage dependencies, reduces conflicts, and enhances overall efficiency and reliability in Python projects.
 - Environments allow you to manage specific versions of Python and other packages for a particular project. By specifying exact dependency versions, Conda environments make it easier to share code, enabling others to recreate the same environment without issues.
 - Conda simplifies package management with a single tool for installing, updating, and removing packages, making it more user-friendly than manual dependency management.
 - With Conda, you can easily switch between different Python versions for different projects, particularly beneficial for projects with specific Python version requirements.
-- Use conda prompt or command promt or vs code powershell (ctrl + `)
+- Use Conda prompt or Command promt or VS Code powershell (ctrl + `) for Conda operations.
 
 __Conda commands:__
 | Command                                                                      | Use                                                                                                              |
