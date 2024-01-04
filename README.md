@@ -120,7 +120,7 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
 - To open VS Code in specific folder:
   - Right click
   - Open in terminal
-  - Run `code` command
+  - Run __`code`__ command
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/2f255810-d9f8-4485-b5fa-b4bf38c70e4c)
 
@@ -141,7 +141,7 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
 - To open Jupyter in specific folder:
   - Right click
   - Open in terminal
-  - Run `jupyter notebook` command
+  - Run __`jupyter notebook`__ command
 - You can find path and version of Jupyter notebook using below commands
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/3fb73c31-00e7-432a-9ecd-a7745ba61e4e)
