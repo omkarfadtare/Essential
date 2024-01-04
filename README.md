@@ -108,6 +108,7 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
   - Click Ok
   - Click Ok
 - You can find path and version of Python using below commands
+
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/f2b570b0-fd4b-4590-9341-b337d97c223c)
 
 ### 2) VS code:
@@ -120,6 +121,7 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
   - Right click
   - Open in terminal
   - Run `code` command
+
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/2f255810-d9f8-4485-b5fa-b4bf38c70e4c)
 
 ### 3) Anaconda:
@@ -141,6 +143,7 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
   - Open in terminal
   - Run `jupyter notebook` command
 - You can find path and version of Jupyter notebook using below commands
+
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/3fb73c31-00e7-432a-9ecd-a7745ba61e4e)
 
 
