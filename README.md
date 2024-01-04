@@ -253,15 +253,31 @@ __1) HTTPS:__
 - So it is recommended to use a Personal Access Token (PAT) instead of your account password.
 - Easy to set up, but may require entering credentials again and again.
 
-> Setting up Personal access token (PAT):
-- GitHub settings > Developers settings > Personal access token > Token (classic) > Generate new token > Generate new token (classic) > enter your GitHub password > Confirm > Set expiry date for token > Select scope of token > Generate token.
-- After that, use that token as a password during Git operations.
+> Generating personal access token (PAT):
+  - Go to GitHub settings
+  - Developers settings
+  - Personal access token
+  - Token (classic)
+  - Generate new token
+  - Generate new token (classic)
+  - Enter your GitHub password
+  - Confirm
+  - Set expiry date for token
+  - Select scope of token
+  - Generate token.
+  - Use generated personal access token as a password during Git operations
 
 __2) GCM (Git Credential Managers):__
 - Enhances authentication by caching credentials.
-- One-time process, often requires logging in with a browser.
+- GCM is a one-time process, often requires logging in with a browser.
+- By default, GCM is installed at the time of Git installation. But if it is not installed follow below steps:
 
-> Setting up Git Credential Managers (GCM):
+> Check whether git credential managers (GCM) is installed or not:
+  - ```ruby
+    git credential-manager version
+    ```
+
+
 - Install Git Credential Manager (Installed at the time of installing git bash ).
 - If GCM is not installed, use command (git credential-manager install) 
 - Log in with your credentials using a browser and your are done.
