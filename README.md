@@ -253,7 +253,7 @@ __1) HTTPS:__
 - So it is recommended to use a Personal Access Token (PAT) instead of your account password.
 - Easy to set up, but may require entering credentials again and again.
 
-> Generating personal access token (PAT):
+> Steps to generate PAT:
   - Go to GitHub settings
   - Developers settings
   - Personal access token
@@ -271,97 +271,43 @@ __2) GCM (Git Credential Managers):__
 - Enhances authentication by caching credentials.
 - GCM is a one-time process, often requires logging in with a browser.
 - By default, GCM is installed at the time of Git installation. But if it is not installed follow below steps:
+- If GCM is not installed in system you can download GCM from [here](https://github.com/git-ecosystem/git-credential-manager/releases).
 
-> Check whether git credential managers (GCM) is installed or not:
+> Step to check whether GCM is installed or not using below command in Git Bash:
   - ```ruby
-    git credential-manager version
+    git credential-manager-core --version
     ```
+    
+__3) SSH (Secure Shell) Keys:__
+- SSH keys provides a more secure method for authentication.
+- It requires generating an SSH key pair and adding the public key to your GitHub account.
+- It enables secure communication via the SSH protocol.
 
-
-- Install Git Credential Manager (Installed at the time of installing git bash ).
-- If GCM is not installed, use command (git credential-manager install) 
-- Log in with your credentials using a browser and your are done.
-
-__3) SSH Keys:__
-- Provides a more secure method for authentication.
-- Requires generating an SSH key pair and adding the public key to your GitHub account.
-- Enables secure communication via the Secure Shell (SSH) protocol.
-
-> Setting up SSH keys:
-- Generate an SSH key pair on your local machine using command (ssh-keygen -t rsa -b 4096 -C "omkarfadtare965@gmail.com" -f my_ssh_key)
-- in above command rsa is type of encryption and 4096 is strength of encryption.
-- Copy the public key (id_rsa.pub) to your GitHub account.
-- Ensure the private key is kept secure on your local machine.
-- Verify SSH Key Addition:
-- Start the SSH agent: eval "$(ssh-agent -s)"
-- Add SSH Key to the SSH Agent: ssh-add /path/to/private/key
-- Verify the key is added: ssh-add -l
- - Add the SSH public key to your GitHub account.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-__Authentication methods used in Git:__
-When you first install git and try to clone or push github account or remote repo you will need an authetication method to connect ur terminal to your github account:
-
-1) HTTPS:
-2) SSH keys:
-3) GCM (Git credential managers):
-4) Persoal access tokens (PAT):
-
-- When you write a code on your local machine and push it to the github account or remote repository, you need a method to connect your remote repo to your local machine.
-- There are two ways you can connect your remote repository to your local machine either by HTTPS url or SSH url.
-
- When you are using git clone copied path for the first time then it will ask for you github username and password
- Support for password authentication was removed on aug 2021
-
- Setting up personal access token:
- settings > developer settings > Personal access tokens > Tokens(classic) > Generate new token > Generate new token (classic) > enter your github password > confirm > You can set expiry date to the token > select scope of token > generate token > copy 
- git clone copied path > username > paste personal access token in password 
-
-
- Setting up GCM:
- I have used GCM one time process log in with browser
-
- Setting up SSH keys:
- For SSH URL u will need to generate a SSH key pair first. SSH urls basically provides access to a git repo via SSH whihc is basically secure shell protocol.
- So as to use SSH u need to generate SSH key pair on ur computer and add to the public key to ur github account. 
- To create SSH key on ur local computer just write ssh-keygen -t rsa(type of encryption) -b 4096(strength of encryption) -C "email@example.com" < entire a file path where you want to store that key < you can optionally enter password or leave it blank < key generated 
- to search for key:
- ls -al ~/.ssh
-.pub key is the ey that your are going to upload to your github interface .pub stands for public its called ur public key. that anycan see this key.
-the key without extension is called the private keyand is the one that you have to kee secure on your local machine. 
-
-How it works is that the public key you put on github and then evry time you want to connect to github or push your code on github or use ur acc via your local machine you use your private key to show github that you are the one who generated this public key.
-It mean only this private key could have generated this public key. 
-
-to print out the public key 
-cat testkey.pub
-copy the key
-then go to github go to settings < SSH & GPG key < new SSH key < Give any title < paste key < add SSH key < enter github account password < COnfirm
-
-To make sure that the local cli knows about the key you just generated 
-Open Git Bash.
-Start the SSH agent: eval "$(ssh-agent -s)"
-Add SSH Key to the SSH Agent: ssh-add ~/.ssh/id_rsa (If you used a different key file name, replace "id_rsa" with your specific private key filename.)
-Verify that the SSH key is added by listing the identities stored by the agent: ssh-add -l
-Add SSH Public Key to Git Hosting Service: 
-
-
-
-
-
+> Steps to generate and set SSH key:
+  - Open Git Bash and write below command:
+  - ```ruby
+    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+    ```
+  - Specify location and name of the file to be saved
+  - You can optionally set a passphrase for added security. Press Enter to skip or enter a passphrase when prompted.
+  - SSH key will be generated and saved to the specified location
+  - View SSH public key using below command:
+  - ```ruby
+    cat file_path.pub
+    ```
+  - Copy SSH public key
+  - Add SSH private key to SSH Agent using below command:
+  - ```ruby
+    eval "$(ssh-agent -s)"
+    ssh-add E:/file_path
+    ```
+  - Add copied SSH publiic key to GitHub or Git hosting services, go to GitHub account
+  - Settings
+  - SSH and GPG keys
+  - New SSH key
+  - Give a title (just for your reference)
+  - Paste SSH public key
+  - Add SSH key 
 
 
 
