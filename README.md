@@ -98,7 +98,7 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
 - You can download PyCharm [here](https://www.jetbrains.com/pycharm/download/?section=windows). There are two versions available i.e. Professional version and Community version (free).
 - After successfully installing PyCharm, you need to add new environment variables. Setting environment variables for PyCharm can be done at system level or by using PyCharm run configuration.
 - To set environment variables at the system level on Windows:
- - Go to, Edit the system environment variables
+  - Go to, Edit the system environment variables
   - Environment variables
   - Under user variables select Path
   - Click Edit
