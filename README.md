@@ -93,10 +93,9 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
 
 # Essential Set-up
 ## Setting up an IDE (Integrated Development Environment):
-
-__1) Pycharm:__
+### 1) Pycharm:
 - PyCharm is an integrated development environment (IDE) specifically designed for Python development.
-- You can download PyCharm from (https://www.jetbrains.com/pycharm/download/?section=windows). There are two versions available i.e. Professional version and Community version (free).
+- You can download PyCharm [here](https://www.jetbrains.com/pycharm/download/?section=windows). There are two versions available i.e. Professional version and Community version (free).
 - After successfully installing PyCharm, you need to add new environment variables. Setting environment variables for PyCharm can be done at the system level or by using PyCharm run configuration.
 - To set environment variables at the system level on Windows, go to (Edit the system environment variables -> Environment variables -> under User variables, select Path -> Click Edit -> Click New -> Add [C:\Users\omkar\AppData\Local\Programs\Python\Python312\ & C:\Users\omkar\AppData\Local\Programs\Python\Python312\Scripts] -> Click Ok -> Click Ok -> Click Ok.
 
