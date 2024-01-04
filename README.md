@@ -123,7 +123,7 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
 - To open VS Code in specific folder:
   - Right click
   - Open in terminal
-  - Run `code` command
+  - Run ```ruby code ``` command
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/2f255810-d9f8-4485-b5fa-b4bf38c70e4c)
 
@@ -144,7 +144,7 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
 - To open Jupyter in specific folder:
   - Right click
   - Open in terminal
-  - Run `jupyter notebook` command
+  - Run ```ruby jupyter notebook ``` command
 - You can find path and version of Jupyter notebook using below commands
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/3fb73c31-00e7-432a-9ecd-a7745ba61e4e)
@@ -209,11 +209,11 @@ __Difference between .YML and .TXT file:__
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/2b7eb970-556d-4f3c-ae8f-15294df568c8)
 
-## Version vontrol systems & Repository hosting services:
+## Version control systems & Repository hosting services:
 __Terminology:__
 - Remote repository is a repository on GitHub account, whereas Local repository is repository in your local machine/computer.
 
-### Version vontrol systems:
+### Version control systems:
 __1) Git:__
 - Git is a distributed version control system or tool that enables collaboration among multiple contributors by allowing them to work on the same project concurrently.
 - It helps you manage and track changes in your code or project over time.
