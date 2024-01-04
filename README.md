@@ -1,4 +1,98 @@
-## IDE (Integrated Development Environment):
+# First level heading
+## Second level heading
+### Third level heading
+
+When you use two or more headings, GitHub automatically generates a table of contents that you can access. 
+
+**Word** or __Word__ : Bold characters
+* *Word* * : Italic character
+~~word~~: Strikethrogh 
+**This text is _extremely_ important**: Bold and nested italic
+***All this text is important*** :All bold and italic
+This is a <sub>subscript</sub> text: subscript
+This is a <sup>superscript</sup> text: Superscript
+
+You can quote text with  >
+Quoting code `code`
+To format code or text into its own distinct block, use triple backticks.
+```
+git status
+git add
+git commit
+```
+Syntax highlighting code
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+Here is a simple flow chart:
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+Creating links
+This site was built using [GitHub Pages](https://pages.github.com/).
+You can also create a Markdown hyperlink by highlighting the text and using the keyboard shortcut Command+V. 
+
+You can define relative links and image paths in your rendered files to help readers navigate to other files in your repository.
+[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+
+making list 
+- George Washington
+* John Adams
++ Thomas Jefferson
+
+order your list
+1. James Madison
+1. James Monroe
+1. John Quincy Adams
+
+Nested list
+1. First list item
+   - First nested list item
+     - Second nested list item
+    
+To create a task list, preface list items with a hyphen and space followed by [ ]. To mark a task as complete, use [x].
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+
+You can mention a person or team on GitHub by typing @ plus their username or team name. 
+
+Adding emoji
+You can add emoji to your writing by typing :EMOJICODE:
+Typing : will bring up a list of suggested emoji. The list will filter as you type, so once you find the emoji you're looking for, press Tab or Enter to complete the highlighted result.
+:EMOJICODE🩹
+https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
+
+You can create a new paragraph by leaving a blank line between lines of text.
+
+Alerts are a Markdown extension based on the blockquote syntax that you can use to emphasize critical information.
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+
+
+# Essential Set-up
+## Setting up an IDE (Integrated Development Environment):
 
 __1) Pycharm:__
 - PyCharm is an integrated development environment (IDE) specifically designed for Python development.
