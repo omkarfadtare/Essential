@@ -91,6 +91,8 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
 
 
 
+
+
 # Essential steps to set-up your System:
 ## Setting up an IDE (Integrated Development Environment):
 ### 1) Pycharm:
@@ -206,26 +208,28 @@ __Difference between .YML and .TXT file:__
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/2b7eb970-556d-4f3c-ae8f-15294df568c8)
 
-## Version vontrol system (Git):
-Remote repository is a repository on GitHub account, whereas local repository is repository in your local machine/computer.
+## Version vontrol systems & Repository hosting services:
+__Terminology:__
+- Remote repository is a repository on GitHub account, whereas Local repository is repository in your local machine/computer.
 
+### Version vontrol systems:
 __1) Git:__
 - Git is a distributed version control system or tool that enables collaboration among multiple contributors by allowing them to work on the same project concurrently.
 - It helps you manage and track changes in your code or project over time.
-- Git can be used through the command line interface, but various GUI tools, such as GitKraken or GitHub Desktop, provide a visual interface for those who prefer not to use the command line interface. As a programmer its always good to use terminal.
+- Git can be used through the command line interface, but various GUI tools, such as GitKraken or GitHub Desktop, provide a visual interface for those who prefer not to use the command line interface, but as a programmer it's always a good practice to use terminal.
 
 __2) GitKraken:__
 - GitKraken is a graphical user interface (GUI) for Git, providing a visual representation of your repositories. Visualizes branches, commits, and merges.
 
-__3) Github dekstop:__
-- Github dekstop is another graphical user interface (GUI) for Git, providing visual representations and simplifying common Git operations.
+__3) GitHub Dekstop:__
+- GitHub Dekstop is another graphical user interface (GUI) for Git, providing visual representations and simplifying common Git operations.
 
 __4) SVN (Subversion):__
 - SVN is a centralised version control system that helps software developers manage and track changes in their code over time.
 - It allows multiple people to work on the same project simultaneously, keeping a history of modifications, and facilitating collaboration.
 
-## Repository hosting services (GitHub): 
-GitHub, GitLab, and Bitbucket are online platforms where you can store, collaborate, and manage your code that uses Git as the version control system. While they share the fundamental purpose of hosting repositories, they may differ in additional features, integrations, and the overall development ecosystem they offer.
+### Repository hosting services: 
+- GitHub, GitLab, and Bitbucket are online platforms where you can store, collaborate, and manage your code that uses Git as the version control system. While they share the fundamental purpose of hosting repositories, they may differ in additional features, integrations, and the overall development ecosystem they offer.
 
 __1) GitHub:__
 - GitHub is a web-based platform, owned by Microsoft, for hosting and collaborating on Git repositories. It's like a cloud-based space to store and work on your code.
@@ -239,6 +243,10 @@ __2) GitLab:__
 __3) Bitbucket:__
 - Bitbucket is also a web-based platform for hosting Git repositories, owned by Atlassian, similar to GitHub and GitLab.
 - It provides Git repository hosting, code collaboration, integration with other Atlassian products (such as Jira), and support for both Git and Mercurial repositories.
+
+
+
+
 
 ## Authentication methods in git:
 When connecting your local machine to a GitHub account or remote repository in Git, you need an authentication method. Here are several methods commonly used:
