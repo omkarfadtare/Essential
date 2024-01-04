@@ -91,14 +91,14 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
 
 
 
-# Essential Set-up
+# Essential steps to set-up your System:
 ## Setting up an IDE (Integrated Development Environment):
 ### 1) Pycharm:
 - PyCharm is an integrated development environment (IDE) specifically designed for Python development.
 - You can download PyCharm [here](https://www.jetbrains.com/pycharm/download/?section=windows). There are two versions available i.e. Professional version and Community version (free).
 - After successfully installing PyCharm, you need to add new environment variables. Setting environment variables for PyCharm can be done at system level or by using PyCharm run configuration.
 - To set environment variables at the system level on Windows:
-  - Go to, Edit the system environment variables
+  - Go to, edit the system environment variables
   - Environment variables
   - Under user variables select Path
   - Click Edit
@@ -114,23 +114,38 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
 - VS Code is a free and open source integrated development environment (IDE) developed by Microsoft.
 - It supports multiple languages and comes with features such as debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git, which is very convenient for version control.
 - It offers numerous settings and a vast marketplace with extensions for adding new languages, themes, debuggers, and connecting additional services.
-- Working with VS Code can enhance your efficiency as a data scientist. It can manage your entire data science project lifecycle.
+- Working with VS Code can enhance your efficiency as a Data scientist. It can manage your entire data science project lifecycle.
 - You can download VS Code [here](https://code.visualstudio.com/download).
 - To open VS Code in specific folder:
   - Right click
   - Open in terminal
-  - Run code command
-
+  - Run `code` command
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/2f255810-d9f8-4485-b5fa-b4bf38c70e4c)
 
-__3) Anaconda:__
-- To use Jupyter Notebook, you need to download Anaconda, which is available for download (https://www.anaconda.com/download).
-- Jupyter Notebook is not a traditional integrated development environment (IDE). It is an open-source web application that enables you to create and share documents containing live code, equations, visualizations, and narrative text.
+### 3) Anaconda:
+- To use Jupyter notebook, you need to download Anaconda. You can download Anaconda [here](https://www.anaconda.com/download).
+- Jupyter notebook is not a traditional integrated development environment (IDE). It is an open-source web application that enables you to create and share documents containing live code, equations, visualizations, and narrative text.
 - After successfully installing Anaconda, you need to add new environment variables. Setting environment variables for Jupyter can be done at the system level.
-- To set environment variables at the system level on Windows, go to (Edit the system environment variables -> Environment variables -> under User variables, select Path -> Click Edit -> Click New -> Add [C:\Users\omkar\anaconda3\ & C:\Users\omkar\anaconda3\Scripts] -> Click Ok -> Click Ok -> Click Ok.
-- To open Jupyter in specific folder, right click -> Open in terminal -> run jupyter notebook command.
-
+- To set environment variables at the system level on Windows:
+  - Go to, edit the system environment variables
+  - Environment variables
+  - Under sser variables select Path
+  - Click Edit
+  - Click New
+  - Add (C:\Users\omkar\anaconda3\ & C:\Users\omkar\anaconda3\Scripts)
+  - Click Ok
+  - Click Ok
+  - Click Ok
+- To open Jupyter in specific folder:
+  - Right click
+  - Open in terminal
+  - Run `jupyter notebook` command
+- You can find path and version of Jupyter notebook using below commands
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/3fb73c31-00e7-432a-9ecd-a7745ba61e4e)
+
+
+
+
 
 ## Conda environment:
 - Conda environments provide a way to isolate different projects, preventing conflicts between dependencies and package versions required by different projects.
