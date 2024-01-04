@@ -107,7 +107,7 @@ Alerts are a Markdown extension based on the blockquote syntax that you can use 
   -  Click Ok
   -  Click Ok
   -  Click Ok.
-
+- You can find path & version of python using below commands
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/f2b570b0-fd4b-4590-9341-b337d97c223c)
 
 __2) VS code:__
