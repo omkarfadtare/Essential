@@ -223,6 +223,7 @@ __3) SSH (Secure Shell) Keys:__
 - It allows developers to isolate changes, experiment with new features, or fix bugs without affecting the main codebase until they are ready to be merged.
 
 > Types of Branch:
+> 
 __1) Master/Main Branch:__
 - The master (or main) branch is typically the default branch in a Git repository. It represents the stable, production-ready version of the code. Your main workspace where all the finished code lives.
 
