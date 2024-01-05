@@ -246,3 +246,6 @@ __5) Development/Branch-per-feature workflow:__
 - It helps in managing complexity by allowing developers to work on different tasks independently.
 - It reduces conflicts by isolating changes in separate branches until they are ready to be integrated.
 - Facilitates a more controlled and efficient development process, especially in collaborative environments.
+
+![image](https://github.com/omkarfadtare965/Essential/assets/154773580/38bf13f5-9148-4202-808a-1b6b9fe4d433)
+
