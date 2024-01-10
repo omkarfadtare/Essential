@@ -252,3 +252,7 @@ __5) Development/Branch-per-feature workflow:__
 Python programming
 - Introduction
 - OOPS
+- Numpy
+- PAndas
+- Regex
+- 
