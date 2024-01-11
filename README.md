@@ -251,8 +251,9 @@ __5) Development/Branch-per-feature workflow:__
 
 Python programming
 - Introduction
-- OOPS
+- OOPS (Object oriented programming)
 - Numpy
 - PAndas
 - Regex
+- Data types in Python
 - 
