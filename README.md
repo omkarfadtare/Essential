@@ -256,4 +256,6 @@ Python programming
 - PAndas
 - Regex
 - Data types in Python
-- 
+- Sci-Kit learn
+- MatPlotLib
+- Seaborn
