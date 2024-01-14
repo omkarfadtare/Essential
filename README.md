@@ -260,3 +260,6 @@ Python programming
 - MatPlotLib
 - Seaborn
 - NLTK
+- Tensorflow
+- Keras
+- 
