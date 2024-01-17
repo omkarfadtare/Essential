@@ -263,3 +263,4 @@ Python programming
 - Tensorflow
 - Keras
 - Automl
+- Optical character recognition
