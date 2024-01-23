@@ -265,3 +265,10 @@ Python programming
 - Automl
 - Optical character recognition (OCR)
 - Hello world
+
+Learning Path
+- Python
+- Machine learning
+- Deep learning
+- Natural language processing
+- AWS
