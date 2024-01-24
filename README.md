@@ -248,6 +248,61 @@ __5) Development/Branch-per-feature workflow:__
 - In some workflows, each feature or task is developed in its own branch. Once the feature is complete, it is merged back into the main branch.
 
 
+### Command line interface Git commands for branching
+git branch * indicates that current branch
+hit Q to get out of that
+git checkout used to switch branches
+git checkout -b feature_read_me_instructon (Give branch name as descriptive a possible) -b is for creating a new branch
+git checkout feature_read_me_instructon  is used to change switch branch (You can hit tab button to auto fill the rest of the name)
+git diff shows what changes have been made it compares the code and it shows all of the lines that have been changed
+after commit and git push you need to create a pull request once the Pull request is merged you generally deletes the branch and switch back to master branch
+
+manually created PR: You can also add or write a messege and 
+put a ss
+
+to get changes on the local master branch git pullif you do not have set upstream then set or else leave it
+git branch -d feature_read_me_instructon (is used to delete branch)
+
+__Merge conflict in Git:__
+when you are building your own code writing bunch of code on your own branch maybe other people are writing code oon their branches and master is getting updated from multiple different places. So its possible that multiple people changes the same files and so sometimes git does not know which code you want to keep or which code you want to get rid of off or which code is reduncted
+
+gti commit -am "added world line the code" adds and commits at the same time but this only works for modified files not for newly created file
+what is git stash????
+
+git merge master To merge branch
+
+Why merging locally wasnt the regular pattern?
+because master gets updated as you are working on the project because may be other people are meging into master and you dont have tose changes into your branch but you dont want to get too far behind the master as you are working because then its gonna be very difficult to merge later may be first git pull an dthen git merge 
+
+
+There are couple of ways to fix merge conflicts interfaces, terminal but the best way to fix merge conflicts is to use code editor like vscode 
+
+Undoing in Git:
+so what if we make a mistake what if we acccidentky add something or commit something and we didnt want to do it 
+- We can actually undo our stages or commits
+staged but undo staging stage means git add
+simply write git reset or git reset filename
+
+
+undo a commit: mean git -m
+git reset HEAD~1
+here HEAD is to get pointer to the last commit and ~1 mean only one commit
+gti log it will show all the commits and at the top it will show hashes then if you want a certain commit to reste copy that sopied_hash
+
+git reset --hard copied_hash ????
+
+
+
+
+Fork: used to make a complete copy of the other peoples repository
+to get the access of all 
+After forking you will have all the acecss for that repository you can create your own branch and then make changes or anything 
+if you want your changes to be made in the original people repo you created a new pull request
+
+dev does not get deleted 
+
+
+
 
 
 
