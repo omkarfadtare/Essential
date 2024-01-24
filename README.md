@@ -221,9 +221,11 @@ __3) SSH (Secure Shell) Keys:__
 - It's like having different notebooks for different tasks, such as writing a story or drawing. This way, you can make changes and try out new ideas without affecting the main story until you're sure you want to include them. Once you're happy with your work in a branch, you can bring those changes back into the main project.
 - Developers use branches to isolate changes, experiment with new features, or fix bugs without affecting the main codebase until they are ready to be merged.
 - It allows developers to isolate changes, experiment with new features, or fix bugs without affecting the main codebase until they are ready to be merged.
+- It helps in managing complexity by allowing developers to work on different tasks independently.
+- It reduces conflicts by isolating changes in separate branches until they are ready to be integrated.
+- It facilitates a more controlled and efficient development process, especially in collaborative environments.
 
-> Types of Branch:
-> 
+> Types of Branch in Git:
 __1) Master/Main Branch:__
 - The master (or main) branch is typically the default branch in a Git repository. It represents the stable, production-ready version of the code. Your main workspace where all the finished code lives.
 
@@ -242,12 +244,30 @@ __4) Release Branch:__
 __5) Development/Branch-per-feature workflow:__
 - In some workflows, each feature or task is developed in its own branch. Once the feature is complete, it is merged back into the main branch.
 
-> Benefits of Branching:
-- It helps in managing complexity by allowing developers to work on different tasks independently.
-- It reduces conflicts by isolating changes in separate branches until they are ready to be integrated.
-- Facilitates a more controlled and efficient development process, especially in collaborative environments.
-
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/38bf13f5-9148-4202-808a-1b6b9fe4d433)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Python programming
 - Introduction
