@@ -225,6 +225,8 @@ __3) SSH (Secure Shell) Keys:__
 - It reduces conflicts by isolating changes in separate branches until they are ready to be integrated.
 - It facilitates a more controlled and efficient development process, especially in collaborative environments.
 
+![image](https://github.com/omkarfadtare965/Essential/assets/154773580/38bf13f5-9148-4202-808a-1b6b9fe4d433)
+
 > Types of Branch in Git:
 
 __1) Master/Main Branch:__
@@ -244,8 +246,6 @@ __4) Release Branch:__
 
 __5) Development/Branch-per-feature workflow:__
 - In some workflows, each feature or task is developed in its own branch. Once the feature is complete, it is merged back into the main branch.
-
-![image](https://github.com/omkarfadtare965/Essential/assets/154773580/38bf13f5-9148-4202-808a-1b6b9fe4d433)
 
 
 
