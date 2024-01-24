@@ -248,6 +248,11 @@ __5) Development/Branch-per-feature workflow:__
 - In some workflows, each feature or task is developed in its own branch. Once the feature is complete, it is merged back into the main branch.
 
 
+
+
+Tower is a popular Git client that provides a graphical user interface (GUI) for managing Git repositories. It is not an intrinsic part of Git itself but is a third-party tool that facilitates Git-related tasks.
+Tower helps users interact with Git repositories in a more visual and user-friendly manner compared to using the command line.
+
 ### Command line interface Git commands for branching
 git branch * indicates that current branch
 hit Q to get out of that
@@ -300,12 +305,41 @@ After forking you will have all the acecss for that repository you can create yo
 if you want your changes to be made in the original people repo you created a new pull request
 
 dev does not get deleted 
+Include some basic git Operations:
+https://www.youtube.com/watch?v=RGOj5yH7evk&list=PLLJ1hZKyeCH1I8dP0UNTpWoIhsl6KpVbu&index=2
+https://www.youtube.com/watch?v=Uszj_k0DGsg&list=PLLJ1hZKyeCH1I8dP0UNTpWoIhsl6KpVbu&index=3
+https://www.youtube.com/watch?v=qsTthZi23VE&list=PLLJ1hZKyeCH1I8dP0UNTpWoIhsl6KpVbu&index=5
+
+
+Intermediate git:
+- The perfect commit:
+- git add -p file_name
+- the perfect commit message: subject + body
+- git commit is used to enter commit message
+
+Branching strategies:
+Every git repository contain at least one long running branch typically called main or master branch. but there can be other long running branches called developer production these branches have something in common they exist throghout the complete lifecycle of the project. Another long running branches called integration branches often named develope or stging. Typically these branches represent states in a project release or deployement process. If your code moves through different states for example fromdevelopement to stging to the production it makes a lot of sense to mirror the structure to. And finally many teams have a convention connected to long running branches typically commits are never directly added to these branches. COmmits should only make it to the long running branches through integration. In other words through a merge or rebase. Thats because you dont wanna add untested unrevied code into your production environment thats why different codes should go through different tests and reviews before finally arrives at production. Another reason might be release bundling and scheduling you might want to release new code in batches maybe even thoroughly scheduled and without susch a rule. And it is also diffeicult because typically keeping an eye on what is released is difficult. 
+
+IN contrast to long running branches they are created for certain purposes and then deleted after they have been integrated. there are many reason to create short lived branches for example when you statrt working on a new feature or a bug fix.
+Github branching strategies:
+- GitHub flow:
+- Gitflow:
+In GitFlow main branch is reflection of the current production state. The other long running branch is called as develope in any feature branches statrt from this one and will be merged back into it. Develope is also the starting point for any releases you would open a new release branch do your testing commit any bug fixes to that release branch. and once you are confident that its ready for production you merge it back into mai. You would then add a tag for that release commit on main and close the release branch.
 
 
 
+Pull requests:
+They are way to communicate about code and review it. The perfect example is when you have finished working on a feature without a pull request you would simply merge your code into main master or some other branch and in some cases this might be totally fine But especially when you are changes are a bit more complex or bit more importatnt you might want to have a second opinion to look over your code. And this is exactly the pull requests are made of. With pull request you can invite other people to review your work and give you a feedback. and after some conversation about the code your reviewer might approve the pull request and merge it into another branch.
+
+Merge conflicts:
+
+When they occur? 
+git merge --abort
 
 
 
+What they actually are?
+How tosolve them?
 
 
 
