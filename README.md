@@ -123,8 +123,9 @@ __1) Git:__
 - It helps you manage and track changes in your code or project over time.
 - Git can be used through the command line interface, but various GUI tools, such as GitKraken or GitHub Desktop, provide a visual interface for those who prefer not to use the command line interface, but as a programmer it's always a good practice to use terminal.
 
-__2) GitKraken:__
+__2) GitKraken | Tower:__
 - GitKraken is a graphical user interface (GUI) for Git, providing a visual representation of your repositories. Visualizes branches, commits, and merges.
+- Tower is a popular Git client that provides a graphical user interface (GUI) for managing Git repositories. It is not an intrinsic part of Git itself but is a third-party tool that facilitates Git-related tasks.
 
 __3) GitHub Dekstop:__
 - GitHub Dekstop is another graphical user interface (GUI) for Git, providing visual representations and simplifying common Git operations.
@@ -149,7 +150,7 @@ __3) Bitbucket:__
 - Bitbucket is also a web-based platform for hosting Git repositories, owned by Atlassian, similar to GitHub and GitLab.
 - It provides Git repository hosting, code collaboration, integration with other Atlassian products (such as Jira), and support for both Git and Mercurial repositories.
 
-### Authentication methods in git:
+### Authentication methods in Git:
 - When connecting your local machine to a GitHub account or remote repository using Git, you need an authentication method. Here are several commonly used methods:
 
 __1) HTTPS:__
@@ -247,11 +248,13 @@ __4) Release Branch:__
 __5) Development/Branch-per-feature workflow:__
 - In some workflows, each feature or task is developed in its own branch. Once the feature is complete, it is merged back into the main branch.
 
+### Branching strategies in Git:
+Every Git repository contains at least one long running branch commonly named main or master branch, representing the primary development path. Additional long-running branches, such as developement branch or production branch, may exist, persisting throughout the project lifecycle. These branches often reflect different stages in the release or deployment process.
+
+Every git repository  typically called main or master branch. but there can be other long running branches called developer production these branches have something in common they exist throghout the complete lifecycle of the project. Another long running branches called integration branches often named develope or stging. Typically these branches represent states in a project release or deployement process
 
 
 
-Tower is a popular Git client that provides a graphical user interface (GUI) for managing Git repositories. It is not an intrinsic part of Git itself but is a third-party tool that facilitates Git-related tasks.
-Tower helps users interact with Git repositories in a more visual and user-friendly manner compared to using the command line.
 
 ### Command line interface Git commands for branching
 git branch * indicates that current branch
