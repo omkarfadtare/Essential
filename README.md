@@ -179,9 +179,9 @@ __2) GCM (Git Credential Managers):__
 - If GCM is not installed in system you can download GCM from [here](https://github.com/git-ecosystem/git-credential-manager/releases) 
 
 > Step to check whether GCM is installed or not using below command in Git Bash:
-  - ```ruby
-    git credential-manager-core --version
-    ```
+```ruby
+git credential-manager-core --version
+```
     
 __3) SSH (Secure Shell) Keys:__
 - SSH keys provides a more secure method for authentication.
@@ -190,22 +190,22 @@ __3) SSH (Secure Shell) Keys:__
 
 > Steps to generate and set SSH key:
   - Open Git Bash and write below command:
-  - ```ruby
-    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-    ```
+```ruby
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
   - Specify location and name of the file to be saved
   - You can optionally set a passphrase for added security. Press Enter to skip or enter a passphrase when prompted.
   - SSH key will be generated and saved to the specified location
   - View SSH public key using below command:
-  - ```ruby
-    cat file_path.pub
-    ```
+```ruby
+cat file_path.pub
+```
   - Copy SSH public key
   - Add SSH private key to SSH Agent using below command:
-  - ```ruby
-    eval "$(ssh-agent -s)"
-    ssh-add E:/file_path
-    ```
+```ruby
+eval "$(ssh-agent -s)"
+ssh-add E:/file_path
+```
   - Add copied SSH public key to GitHub or Git hosting services, go to GitHub account
   - Settings
   - SSH and GPG keys
@@ -248,32 +248,16 @@ __4) Release Branch:__
 __5) Development/Branch-per-feature workflow:__
 - In some workflows, each feature or task is developed in its own branch. Once the feature is complete, it is merged back into the main branch.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Branching strategies in Git:
 Every Git repository contains at least one long running branch commonly named main or master branch, representing the primary development path. Additional long-running branches, such as developement branch or production branch, may exist, persisting throughout the project lifecycle. These branches often reflect different stages in the release or deployment process.
 
 Every git repository  typically called main or master branch. but there can be other long running branches called developer production these branches have something in common they exist throghout the complete lifecycle of the project. Another long running branches called integration branches often named develope or stging. Typically these branches represent states in a project release or deployement process
 
-# Pushing local repository to GitHub:
+> Pushing local repository to GitHub:
 - Open local project folder having project files in it and copy path
 - Open Git Bash and set username and email address
 - Check for present working directory in Git Bash
-``` ruby
+```ruby
 pwd
 ```
 - Change current working directory of Git Bash to the project folder path (copied path)
@@ -282,7 +266,7 @@ cd /e/Projet_demo
 ```
 - Go to GitHub account and create a new repository (local and remote repository name can be differnet, doesn't have to be same) without initializing README file
 - Come back to Git Bash and run below command
-``` ruby
+```ruby
 git remote add origin https://github.com/user_name/remote_repo_name.git
 git status
 ```
