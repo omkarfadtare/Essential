@@ -262,7 +262,9 @@ __7) Production branch:__
 __8) Release branch:__
 - These branches are created before releasing a new version for final testing. They are merged into both master and development branches once ready.
 
-> Branching strategies: 1) Gitflow 2) GitHub flow  
+> Branching strategies:
+1) Gitflow
+2) 2) GitHub flow  
 
 
 
