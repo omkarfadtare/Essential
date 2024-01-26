@@ -122,6 +122,8 @@ __1) Git:__
 - Git is a distributed version control system or tool that enables collaboration among multiple contributors by allowing them to work on the same project concurrently.
 - It helps you manage and track changes in your code or project over time.
 - Git can be used through the command line interface, but various GUI tools, such as GitKraken or GitHub Desktop, provide a visual interface for those who prefer not to use the command line interface, but as a programmer it's always a good practice to use terminal.
+> Installing Git Bash:
+- You can download Git Bash [here](https://git-scm.com/downloads).
 
 __2) GitKraken | Tower:__
 - GitKraken is a graphical user interface (GUI) for Git, providing a visual representation of your repositories. Visualizes branches, commits, and merges.
