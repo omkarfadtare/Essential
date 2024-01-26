@@ -272,16 +272,27 @@ Every git repository  typically called main or master branch. but there can be o
 # Pushing local repository to GitHub:
 - Open local project folder having project files in it and copy path
 - Open Git Bash and set username and email address
-- check for present working directory
+- Check for present working directory in Git Bash
 ``` ruby
 pwd
 ```
 - Change current working directory of Git Bash to the project folder path (copied path)
+```ruby
+cd /e/Projet_demo
+```
 - Go to GitHub account and create a new repository (local and remote repository name can be differnet, doesn't have to be same) without initializing README file
 - Come back to Git Bash and run below command
-- ``` ruby
-  
-  ```
+``` ruby
+git remote add origin https://github.com/user_name/remote_repo_name.git
+git status
+```
+- Stage, commit and push all the files to the remote repository
+```ruby
+git add .
+git commit -m "Commit message"
+git push origin -u master
+```
+
 
 
 ### Command line interface Git commands for branching
