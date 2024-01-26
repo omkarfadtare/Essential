@@ -248,12 +248,40 @@ __4) Release Branch:__
 __5) Development/Branch-per-feature workflow:__
 - In some workflows, each feature or task is developed in its own branch. Once the feature is complete, it is merged back into the main branch.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Branching strategies in Git:
 Every Git repository contains at least one long running branch commonly named main or master branch, representing the primary development path. Additional long-running branches, such as developement branch or production branch, may exist, persisting throughout the project lifecycle. These branches often reflect different stages in the release or deployment process.
 
 Every git repository  typically called main or master branch. but there can be other long running branches called developer production these branches have something in common they exist throghout the complete lifecycle of the project. Another long running branches called integration branches often named develope or stging. Typically these branches represent states in a project release or deployement process
 
-
+# Pushing local repository to GitHub:
+- Open local project folder having project files in it and copy path
+- Open Git Bash and set username and email address
+- check for present working directory
+``` ruby
+pwd
+```
+- Change current working directory of Git Bash to the project folder path (copied path)
+- Go to GitHub account and create a new repository (local and remote repository name can be differnet, doesn't have to be same) without initializing README file
+- Come back to Git Bash and run below command
+- ``` ruby
+  
+  ```
 
 
 ### Command line interface Git commands for branching
