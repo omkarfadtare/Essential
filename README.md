@@ -123,7 +123,7 @@ __1) Git:__
 - It helps you manage and track changes in your code or project over time.
 - Git can be used through the command line interface, but various GUI tools, such as GitKraken or GitHub Desktop, provide a visual interface for those who prefer not to use the command line interface, but as a programmer it's always a good practice to use terminal.
 > Installing Git Bash:
-- You can download Git Bash [here](https://git-scm.com/downloads).
+- You can download and install Git Bash [here](https://git-scm.com/downloads).
 
 __2) GitKraken | Tower:__
 - GitKraken is a graphical user interface (GUI) for Git, providing a visual representation of your repositories. Visualizes branches, commits, and merges.
@@ -142,6 +142,8 @@ __4) SVN (Subversion):__
 __1) GitHub:__
 - GitHub is a web-based platform, owned by Microsoft, for hosting and collaborating on Git repositories. It's like a cloud-based space to store and work on your code.
 - It provides Git repository hosting, code collaboration, issue tracking, and integration with various development tools.
+> Creating a GitHub account:
+- You can create and set-up your GitHub account [here](https://github.com/).
   
 __2) GitLab:__
 - GitLab is also a web-based platform for hosting Git repositories, similar to GitHub.
@@ -159,7 +161,6 @@ __1) HTTPS:__
 - HTTPS authentication in Git uses username and password for authentication but GitHub deprecated password authentication for Git operations in August 2021.
 - So it is recommended to use a Personal Access Token (PAT) instead of your account password.
 - Easy to set up, but may require entering credentials again and again.
-
 > Steps to generate PAT:
   - Go to GitHub settings
   - Developers settings
@@ -189,7 +190,6 @@ __3) SSH (Secure Shell) Keys:__
 - SSH keys provides a more secure method for authentication.
 - It requires generating an SSH key pair and adding the public key to your GitHub account.
 - It enables secure communication via the SSH protocol.
-
 > Steps to generate and set SSH key:
   - Open Git Bash and write below command:
 ```ruby
