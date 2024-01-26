@@ -113,7 +113,7 @@ __Difference between .YML and .TXT file:__
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/2b7eb970-556d-4f3c-ae8f-15294df568c8)
 
-## Version control systems & Repository hosting services:
+## Git and GitHub:
 __Terminology:__
 - Remote repository is a repository on GitHub account, whereas Local repository is repository in your local machine/computer.
 
@@ -180,7 +180,6 @@ __2) GCM (Git Credential Managers):__
 - GCM is a one-time process, often requires logging in with a browser.
 - By default, GCM is installed at the time of Git installation.
 - If GCM is not installed in system you can download GCM from [here](https://github.com/git-ecosystem/git-credential-manager/releases) 
-
 > Step to check whether GCM is installed or not using below command in Git Bash:
 ```ruby
 git credential-manager-core --version
@@ -218,7 +217,7 @@ ssh-add E:/file_path
   - Enter Github password
   - Confirm
 
-## Git branching simplified:
+### Git branching simplified:
 - Branching is extremely useful because when building new features for an application that might break your code or are not yet finished, you don't want to save them directly to the main master branch. Instead, you want to work on them in a kind of sandbox, a separate branch. This way, you can write and refine the code until it's correct and in the state you want, before merging it back into the main code base. This approach is especially helpful when multiple people are working on the same repository or when there are numerous branches in progress simultaneously.
 - Git branching is like creating separate paths to work on different tasks without messing up the main project.
 - It's like having different notebooks for different tasks, such as writing a story or drawing. This way, you can make changes and try out new ideas without affecting the main story until you're sure you want to include them. Once you're happy with your work in a branch, you can bring those changes back into the main project.
@@ -227,28 +226,53 @@ ssh-add E:/file_path
 - It helps in managing complexity by allowing developers to work on different tasks independently.
 - It reduces conflicts by isolating changes in separate branches until they are ready to be integrated.
 - It facilitates a more controlled and efficient development process, especially in collaborative environments.
+> Types of branch:
+- Every Git repository typically contains at least one long-running branch, commonly named "main" or "master". Additional long-running branches, such as "developement" or "production" or "integration" may exist throughout the entire project lifecycle. These branches often represent different stages in the release or deployment process. It is common to structure branches to mirror the flow of code through various states, such as development, staging, and production.
+- Changes are not directly merged to these branches; instead changes are merged to the "integration" branch, this ensures only tested and reviewed code is introduced into production environments.
+- This practice aligns with the principles of testing, code review, and release bundling, allowing for controlled and scheduled releases. In contrast to long-running branches, short-lived branches are created for specific purposes and are deleted after integration. Common use cases for short-lived branches include working on new features or bug fixes. These branches provide isolation for changes, allowing developers to collaborate on specific tasks without impacting the main development branches.
 
-![image](https://github.com/omkarfadtare965/Essential/assets/154773580/38bf13f5-9148-4202-808a-1b6b9fe4d433)
+__1) Long lived branch:__
+- Long lived branches are branches that exist throughout the entire lifespan of a project. For example main/master branch, developement branch, production branch, integration branch.
+- Changes are carefully merged into these branches after thorough testing and review, ensuring that only well-vetted code becomes a permanent part of the project's history.
 
-> Types of Branch in Git:
+__2) Short lived branch:__
+- Short lived branches are branches that are created for a specific, temporary purpose and are not intended to exist throughout the entire lifespan of the project. For example feature branch, bug fix branch, release preparation branch, experiment branch.
 
-__1) Master/Main Branch:__
+__3) Master/Main branch:__
 - The master (or main) branch is typically the default branch in a Git repository. It represents the stable, production-ready version of the code. Your main workspace where all the finished code lives.
 
-__2) Feature Branch:__
+__4) Feature branch:__
 - Developers create special areas to work on new things called "feature branches." Feature branches are like special areas for working on new features without disturbing the main project.
 - Changes made in a feature branch can be brought back into the main project when ready. It's a way to keep everything neat and tidy while trying out and adding exciting features.
 - When we create a new feature branch, initially, the code on the master branch and this new feature branch will be exactly the same. As you make updates and commit those changes to the feature branch, those updates are only visible in the feature branch. Similarly, when you make updates and commit changes to the master branch, those changes are only seen in the master branch.
 - Each branch keeps track of the changes made on that specific branch. The changes made in one branch are isolated to that branch until they are explicitly merged into another branch.
 
-__3) Bugfix Branch:__
+__5) Bugfix branch:__
 - These are used to fix specific bugs without affecting the main code. Similar to feature branches, bugfix branches are created off the master branch.
 
-__4) Release Branch:__
+__6) Developement branch:__
+- The development branch serves as a central place where developers integrate their changes and collaborate on new features or improvements before these changes are merged into more stable branches, such as a production or main branch.
+
+__6) Integration/Staging branch:__
+- Integration/Staging branch generally refers to a branch where different changes from various development branches are brought together, integrated, and tested as a whole before being merged into a more stable branch or released into production.
+
+__7) Production branch:__
+- Production branch refers to a long-lived branch that represents the stable and reliable version of the software that is deployed to the production environment.
+
+__8) Release branch:__
 - These branches are created before releasing a new version for final testing. They are merged into both master and development branches once ready.
 
-__5) Development/Branch-per-feature workflow:__
-- In some workflows, each feature or task is developed in its own branch. Once the feature is complete, it is merged back into the main branch.
+> Branching strategies: 1) Gitflow 2) GitHub flow  
+
+
+
+
+
+__Merge Conflicts__
+
+![image](https://github.com/omkarfadtare965/Essential/assets/154773580/38bf13f5-9148-4202-808a-1b6b9fe4d433)
+
+
 
 ### Branching strategies in Git:
 Every Git repository contains at least one long running branch commonly named main or master branch, representing the primary development path. Additional long-running branches, such as developement branch or production branch, may exist, persisting throughout the project lifecycle. These branches often reflect different stages in the release or deployment process.
@@ -387,14 +411,7 @@ Intermediate git:
 - the perfect commit message: subject + body
 - git commit is used to enter commit message
 
-Branching strategies:
-Every git repository contain at least one long running branch typically called main or master branch. but there can be other long running branches called developer production these branches have something in common they exist throghout the complete lifecycle of the project. Another long running branches called integration branches often named develope or stging. Typically these branches represent states in a project release or deployement process. If your code moves through different states for example fromdevelopement to stging to the production it makes a lot of sense to mirror the structure to. And finally many teams have a convention connected to long running branches typically commits are never directly added to these branches. COmmits should only make it to the long running branches through integration. In other words through a merge or rebase. Thats because you dont wanna add untested unrevied code into your production environment thats why different codes should go through different tests and reviews before finally arrives at production. Another reason might be release bundling and scheduling you might want to release new code in batches maybe even thoroughly scheduled and without susch a rule. And it is also diffeicult because typically keeping an eye on what is released is difficult. 
 
-IN contrast to long running branches they are created for certain purposes and then deleted after they have been integrated. there are many reason to create short lived branches for example when you statrt working on a new feature or a bug fix.
-Github branching strategies:
-- GitHub flow:
-- Gitflow:
-In GitFlow main branch is reflection of the current production state. The other long running branch is called as develope in any feature branches statrt from this one and will be merged back into it. Develope is also the starting point for any releases you would open a new release branch do your testing commit any bug fixes to that release branch. and once you are confident that its ready for production you merge it back into mai. You would then add a tag for that release commit on main and close the release branch.
 
 
 
