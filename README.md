@@ -266,6 +266,11 @@ __8) Release branch:__
 1) Gitflow
 2) GitHub flow  
 
+__1) Gitflow:__
+- A branching model that defines specific roles for different branches.
+- Main -> Developement -> Feature -> Release -> Hotfix 
+
+__2) GitHub flow:__
 
 
 
