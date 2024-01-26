@@ -262,26 +262,35 @@ __7) Production branch:__
 __8) Release branch:__
 - These branches are created before releasing a new version for final testing. They are merged into both master and development branches once ready.
 
+![image](https://github.com/omkarfadtare965/Essential/assets/154773580/38bf13f5-9148-4202-808a-1b6b9fe4d433)
+
 > Branching strategies:
 1) Gitflow
 2) GitHub flow  
 
 __1) Gitflow:__
-- A branching model that defines specific roles for different branches.
-- Main -> Developement -> Feature -> Release -> Hotfix 
+- It is a branching model that defines specific roles for different branches.
+- Main branch -> Developement branch -> Feature branch -> Release branch -> Hotfix branch 
 
 __2) GitHub flow:__
+- It is a simplified and continuous delivery-oriented branching model.
+- Main branch -> Feature branch
 
 
 
 
-# Hwllo
+
+
+
+
+
+
+
+
+
+
 
 __Merge Conflicts__
-
-![image](https://github.com/omkarfadtare965/Essential/assets/154773580/38bf13f5-9148-4202-808a-1b6b9fe4d433)
-
-
 
 ### Branching strategies in Git:
 Every Git repository contains at least one long running branch commonly named main or master branch, representing the primary development path. Additional long-running branches, such as developement branch or production branch, may exist, persisting throughout the project lifecycle. These branches often reflect different stages in the release or deployment process.
