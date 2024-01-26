@@ -253,7 +253,7 @@ Every Git repository contains at least one long running branch commonly named ma
 
 Every git repository  typically called main or master branch. but there can be other long running branches called developer production these branches have something in common they exist throghout the complete lifecycle of the project. Another long running branches called integration branches often named develope or stging. Typically these branches represent states in a project release or deployement process
 
-> Pushing local repository to GitHub:
+> Pushing local repository to GitHub account:
 - Open local project folder having project files in it and copy path
 - Open Git Bash and set username and email address
 - Check for present working directory in Git Bash
@@ -262,7 +262,7 @@ pwd
 ```
 - Change current working directory of Git Bash to the project folder path (copied path)
 ```ruby
-cd /e/Projet_demo
+cd /e/copied_path
 ```
 - Go to GitHub account and create a new repository (local and remote repository name can be differnet, doesn't have to be same) without initializing README file
 - Come back to Git Bash and run below command
@@ -276,7 +276,8 @@ git add .
 git commit -m "Commit message"
 git push origin -u master
 ```
-
+> Clonning remote repository from GitHub account to local machine:
+- 
 
 
 ### Command line interface Git commands for branching
