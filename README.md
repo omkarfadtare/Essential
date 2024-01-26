@@ -264,7 +264,7 @@ __8) Release branch:__
 
 > Branching strategies:
 1) Gitflow
-2) 2) GitHub flow  
+2) GitHub flow  
 
 
 
