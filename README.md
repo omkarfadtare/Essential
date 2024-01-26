@@ -276,8 +276,49 @@ git add .
 git commit -m "Commit message"
 git push origin -u master
 ```
+
+> Pushing changes to remote repository
+- After making changes run below commands:
+```ruby
+git add .
+git commit -m "commit message"
+git push
+```
+
 > Clonning remote repository from GitHub account to local machine:
-- 
+- Goto GitHub account and create a new repository and copy the HTTPS web url
+- Open Git Bash and run below command
+```ruby
+git clone copied_url
+```
+
+> Pulling changes to local repository:
+- Navigate to the local repository on your machine
+- Run below command in Git Bash:
+```ruby
+git fetch origin
+git merge
+```
+
+or you can use 
+```ruby
+git pull --------> (fetch + merge)
+```
+
+git fetch will check are there any new changes in remote repository which are not available in our local repositor. It's more like just checking to seen if there are any changes avialable.
+Whereas git pull will fetch and merge/update new changes from remote repository to local repository.
+![image](https://github.com/omkarfadtare/Essential/assets/154773580/03ba2592-fa02-4d29-bc91-5849a9b3eeb9)
+
+> 
+
+
+
+
+
+
+
+
+
 
 
 ### Command line interface Git commands for branching
