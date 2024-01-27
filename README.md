@@ -61,7 +61,7 @@
 - With Conda, you can easily switch between different Python versions for different projects, particularly beneficial for projects with specific Python version requirements.
 - Use Conda prompt or Command promt or VS Code powershell (ctrl + `) for Conda operations.
 
-__Conda commands:__
+### Conda commands:
 | Command                                                                      | Use                                                                                                                |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 | conda info                                                                   | Used to verify whether Conda is installed or not                                                                   |
