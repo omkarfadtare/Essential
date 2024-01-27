@@ -292,11 +292,6 @@ __2) GitHub flow:__
 
 __Merge Conflicts__
 
-### Branching strategies in Git:
-Every Git repository contains at least one long running branch commonly named main or master branch, representing the primary development path. Additional long-running branches, such as developement branch or production branch, may exist, persisting throughout the project lifecycle. These branches often reflect different stages in the release or deployment process.
-
-Every git repository  typically called main or master branch. but there can be other long running branches called developer production these branches have something in common they exist throghout the complete lifecycle of the project. Another long running branches called integration branches often named develope or stging. Typically these branches represent states in a project release or deployement process
-
 > Pushing local repository to GitHub account:
 - Open local project folder having project files in it and copy path
 - Open Git Bash and set username and email address
