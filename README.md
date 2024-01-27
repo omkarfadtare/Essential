@@ -264,7 +264,7 @@ __8) Release branch:__
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/38bf13f5-9148-4202-808a-1b6b9fe4d433)
 
-> Branching strategies:
+### Branching strategies:
 1) Gitflow
 2) GitHub flow  
 
@@ -276,7 +276,9 @@ __2) GitHub flow:__
 - It is a simplified and continuous delivery-oriented branching model.
 - Main branch -> Feature branch
 
-> 1) Pushing local repository to GitHub account:
+### Git Bash commands:
+
+__1) Pushing local repository to GitHub account:__
 - Open local project folder having project files in it and copy folder path
 - Open Git Bash and set username and email address
 ```ruby
@@ -304,7 +306,7 @@ git commit -m "Commit message"
 git push origin -u master
 ```
 
-> Pushing changes madde in local repository to remote repository
+__2) Pushing changes madde in local repository to remote repository:__
 - After making changes run below commands:
 ```ruby
 git add .
@@ -312,7 +314,7 @@ git commit -m "commit_message"
 git push
 ```
 
-> Clonning remote repository from GitHub account to local machine:
+__3) Clonning remote repository from GitHub account to local machine:__
 - Goto GitHub account and initialize a new repository with README file and copy the HTTPS web url
 - Open Git Bash, navigate to the desired path and run below command:
 ```ruby
@@ -320,7 +322,7 @@ cd /e/
 git clone copied_web_url
 ```
 
-> Pulling changes made in remote repository to local repository:
+__4) Pulling changes made in remote repository to local repository:__
 - Open Git Bash, navigate to the local repository on your machine and run any of the below two commands:
 ```ruby
 git fetch origin
