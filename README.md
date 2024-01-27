@@ -276,32 +276,20 @@ __2) GitHub flow:__
 - It is a simplified and continuous delivery-oriented branching model.
 - Main branch -> Feature branch
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-__Merge Conflicts__
-
-> Pushing local repository to GitHub account:
-- Open local project folder having project files in it and copy path
+> 1) Pushing local repository to GitHub account:
+- Open local project folder having project files in it and copy folder path
 - Open Git Bash and set username and email address
+```ruby
+git config --global user."user_name"
+git config --global email."email_address"
+```
 - Check for present working directory in Git Bash
 ```ruby
 pwd
 ```
-- Change current working directory of Git Bash to the project folder path (copied path)
+- Change present working directory of Git Bash to the project folder path (copied folder path)
 ```ruby
-cd /e/copied_path
+cd /e/copied_folder_path
 ```
 - Go to GitHub account and create a new repository (local and remote repository name can be differnet, doesn't have to be same) without initializing README file
 - Come back to Git Bash and run below command
@@ -316,39 +304,35 @@ git commit -m "Commit message"
 git push origin -u master
 ```
 
-> Pushing changes to remote repository
+> Pushing changes madde in local repository to remote repository
 - After making changes run below commands:
 ```ruby
 git add .
-git commit -m "commit message"
+git commit -m "commit_message"
 git push
 ```
 
 > Clonning remote repository from GitHub account to local machine:
-- Goto GitHub account and create a new repository and copy the HTTPS web url
-- Open Git Bash and run below command
+- Goto GitHub account and initialize a new repository with README file and copy the HTTPS web url
+- Open Git Bash, navigate to the desired path and run below command:
 ```ruby
-git clone copied_url
+cd /e/
+git clone copied_web_url
 ```
 
-> Pulling changes to local repository:
-- Navigate to the local repository on your machine
-- Run below command in Git Bash:
+> Pulling changes made in remote repository to local repository:
+- Open Git Bash, navigate to the local repository on your machine and run any of the below two commands:
 ```ruby
 git fetch origin
 git merge
 ```
-
-or you can use 
 ```ruby
-git pull --------> (fetch + merge)
+git pull
 ```
+- "git fetch" will check are there any new changes in remote repository which are not available in our local repositor. It's more like counting how many changes are there avialable.
+- Whereas "git pull" will fetch and merge/update local repository with the aviable changes in remote repository.
 
-git fetch will check are there any new changes in remote repository which are not available in our local repositor. It's more like just checking to seen if there are any changes avialable.
-Whereas git pull will fetch and merge/update new changes from remote repository to local repository.
 ![image](https://github.com/omkarfadtare/Essential/assets/154773580/03ba2592-fa02-4d29-bc91-5849a9b3eeb9)
-
-> 
 
 
 
@@ -395,7 +379,7 @@ so what if we make a mistake what if we acccidentky add something or commit some
 staged but undo staging stage means git add
 simply write git reset or git reset filename
 
-
+__Merge Conflicts__
 undo a commit: mean git -m
 git reset HEAD~1
 here HEAD is to get pointer to the last commit and ~1 mean only one commit
