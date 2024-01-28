@@ -343,9 +343,6 @@ git pull
 
 
 
-
-
-
 ### Command line interface Git commands for branching
 git branch * indicates that current branch
 hit Q to get out of that
