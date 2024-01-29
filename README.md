@@ -14,11 +14,7 @@
   - Click Ok
   - Click Ok
   - Click Ok
-- You can find path and version of Python using below commands
-```ruby
-where python
-python --version
-```
+- You can find path and version of Python by running below commands in command prompt:
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/f2b570b0-fd4b-4590-9341-b337d97c223c)
 
@@ -53,7 +49,7 @@ python --version
   - Right click
   - Open in terminal
   - Run `jupyter notebook` command
-- You can find path and version of Jupyter notebook using below commands
+- You can find path and version of Jupyter notebook by running below commands in command prompt:
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/3fb73c31-00e7-432a-9ecd-a7745ba61e4e)
 
@@ -125,7 +121,7 @@ __Terminology:__
 __1) Git:__
 - Git is a distributed version control system or tool that enables collaboration among multiple contributors by allowing them to work on the same project concurrently.
 - It helps you manage and track changes in your code or project over time.
-- Git can be used through the command line interface, but various GUI tools, such as GitKraken or GitHub Desktop, provide a visual interface for those who prefer not to use the command line interface, but as a programmer it's always a good practice to use terminal.
+- Git can be used through the command line interface or VS Code terminal or Git Bash, but various GUI tools, such as GitKraken or GitHub Desktop, provide a visual interface for those who prefer not to use the command line interface, but as a programmer it's always a good practice to use terminal.
 > Installing Git Bash:
 - You can download and install Git Bash [here](https://git-scm.com/downloads).
 
@@ -315,7 +311,7 @@ __2) Pushing changes madde in local repository to remote repository:__
 ```ruby
 git add .
 git commit -m "commit_message"
-git push
+git push origin -u master
 ```
 
 __3) Clonning remote repository from GitHub account to local machine:__
@@ -327,7 +323,7 @@ git clone copied_web_url
 ```
 
 __4) Pulling changes made in remote repository to local repository:__
-- Open Git Bash, navigate to the local repository on your machine and run any of the below two commands:
+- Open Git Bash, navigate to the local repository on your machine and run any of the below two commands in Git Bash:
 ```ruby
 git fetch origin
 git merge
@@ -335,95 +331,129 @@ git merge
 ```ruby
 git pull
 ```
-- "git fetch" will check are there any new changes in remote repository which are not available in our local repositor. It's more like counting how many changes are there avialable.
+- "git fetch" will check are there any new changes in remote repository which are not available in your local repositor. It's more like counting how many changes are avialable.
 - Whereas "git pull" will fetch and merge/update local repository with the aviable changes in remote repository.
 
 ![image](https://github.com/omkarfadtare/Essential/assets/154773580/03ba2592-fa02-4d29-bc91-5849a9b3eeb9)
 
+__5) Creating a new branch:__
+- Open Git Bash, navigate to the project folder and run below commands:
+```ruby
+pwd
+cd /e/Project
+git branch
+git checkout -b bugfix_branch
+git branch
+git checkout master
+git checkout bugfix_branch
+```
+- When we create a new "bug_fix" branch, initially, the code on the master branch and this new bug_fix branch will be exactly the same. As you make updates and commit those changes to the bug_fix branch, those updates are only visible in the bug_fix branch. Similarly, when you make updates and commit changes to the master branch, those changes are only seen in the master branch.
 
+__6) Merging branch:__
+- Merging in Git is the process of integrating changes from one branch, for example a "feature_branch" into another branch, for example "master" branch. 
+- Run below command in Git Bash to review the differences between branches before merging:
+```ruby
+git diff
+git diff main..feature_branch
+git diff feature_branch..main
+git log -p feature_branch
+```
+- Commit changes on your branch, push them to the remote repository.
+```ruby
+git add .
+git commit -m "sommit message"
+git push
+```
+- Create a pull request to propose merging your changes into the target branch from GitHub.
+- Once the pull request is approved and merged, you typically delete the feature branch and switch back to the main branch.
+- You can directly merge changes from feature_branch to main branch by running below Git command to bypass the process of review that pull requests facilitate:
+```ruby
+git merge feature_branch
+```
+- You can directly merge changes from main branch to feature_branch by running below Git command to bypass the process of review that pull requests facilitate:
+```ruby
+git merge main
+```
+- However, for collaborative projects or when changes need to be reviewed by others before being merged into the main branch, creating a pull request is the preferred workflow. 
+-  Pull requests allow for code review, discussion, and collaboration among team members, ensuring that changes are thoroughly vetted before being merged into the main branch.
+- In such cases, the merging typically occurs on the hosting platform (like GitHub) after the pull request has been approved.
 
+__7) Pull requests:__
+- Pull requests are a way for team members to discuss and review code changes before they are merged into the main branch. They're like asking for a second opinion on your work.
+- For instance, when you finish working on a feature, instead of directly merging your code into the main branch, you create a pull request. This allows other team members to review your changes, provide feedback, and suggest improvements.
+- Once everyone agrees that the code looks good, the pull request can be approved and the changes are merged into the main branch. It's a collaborative way to ensure code quality and prevent mistakes from being introduced into the project.
 
+![image](https://github.com/omkarfadtare/Essential/assets/154773580/d0e430eb-3332-4c93-be1b-2250b804b35a)
 
+__7) Deleting branch:__
+- If you've merged the changes from "bug_fix_branch" into another branch or master branch, and then deleted "bug_fix_branch" from the remote repository on GitHub, your local repository might still be tracking the branch. This can happen because Git keeps a local reference to the remote branches, untill you explicitly remove them locally.
+- To update your local repository and remove the reference to the deleted branch run below commands in Git Bash:
+```ruby
+git fetch --prune
+git branch -d bug_fix_branch
+git branch
+```
+- If you haven't merged "bug_fix_branch" yet and still want to delete the branch you may need to force delete it by running below command in Git Bash:
+```ruby
+git branch -D bug_fix_branch
+```
 
+__8) Undoing changes in Git:__
+- If you accidentally added files to the staging area (that is git add), you can undo this to unstage the files, by running below command in Git Bash:
+```ruby
+git reset
+git reset file_name
+```
+- If you make a mistake in a commit message or accidentally commit changes, you can undo the commits by running below command in Git Bash:
+```ruby
+git reset HEAD~1.
+```
+- Here, "HEAD~1" refers to the previous commit. You can specify the number of commits to go back if needed.
+- To find the commit you want to reset to, run below command in Git Bash to view the commit history and find the commit hash (the unique identifier for each commit):
+```ruby
+git log
+```
+- Once you have the commit hash, run below command in Git Bash to reset to that specific commit. Be cautious as this will discard any changes made after that commit:
+```ruby
+git reset --hard commit_hash
+``` 
 
+__8) Merge conflicts:__
+- Merge conflicts occur when Git is unable to automatically merge changes from different branches. This happens when multiple people modify the same part of a file, or when changes made in one branch conflict with changes made in another branch.
+- Merge conflicts arise when Git cannot determine which changes to keep because of overlapping modifications in different branches.
+- Manual Resolution:
 
-### Command line interface Git commands for branching
-git branch * indicates that current branch
-hit Q to get out of that
-git checkout used to switch branches
-git checkout -b feature_read_me_instructon (Give branch name as descriptive a possible) -b is for creating a new branch
-git checkout feature_read_me_instructon  is used to change switch branch (You can hit tab button to auto fill the rest of the name)
-git diff shows what changes have been made it compares the code and it shows all of the lines that have been changed
-after commit and git push you need to create a pull request once the Pull request is merged you generally deletes the branch and switch back to master branch
+Open the conflicted file(s) in a code editor, such as VSCode.
+Locate the conflict markers (<<<<<<<, =======, >>>>>>>) and manually resolve the conflicting changes.
+Save the file(s) after resolving the conflicts.
+Stage the resolved files using git add and then commit the changes.
+If you encounter difficulties resolving conflicts, you can abort the merge using git merge --abort to return to the pre-merge state.
 
-manually created PR: You can also add or write a messege and 
-put a ss
-
-to get changes on the local master branch git pullif you do not have set upstream then set or else leave it
-git branch -d feature_read_me_instructon (is used to delete branch)
-
-__Merge conflict in Git:__
-when you are building your own code writing bunch of code on your own branch maybe other people are writing code oon their branches and master is getting updated from multiple different places. So its possible that multiple people changes the same files and so sometimes git does not know which code you want to keep or which code you want to get rid of off or which code is reduncted
-
-gti commit -am "added world line the code" adds and commits at the same time but this only works for modified files not for newly created file
-what is git stash????
-
-git merge master To merge branch
-
+- When they occur? 
+What they actually are?
+How tosolve them?
+git merge --abort
+Merge conflicts in Git:
+- When you are building your own code writing bunch of code on your own branch, maybe other people are writing code oon their branches and master is getting updated from multiple different places. So its possible that multiple people changes the same files and so sometimes git does not know which code you want to keep or which code you want to get rid of off or which code is reduncted
+- There are couple of ways to fix merge conflicts interfaces, terminal but the best way to fix merge conflicts is to use code editor like vscode 
 Why merging locally wasnt the regular pattern?
-because master gets updated as you are working on the project because may be other people are meging into master and you dont have tose changes into your branch but you dont want to get too far behind the master as you are working because then its gonna be very difficult to merge later may be first git pull an dthen git merge 
+because master gets updated as you are working on the project because may be other people are meging into master and you dont have those changes into your branch but you dont want to get too far behind the master as you are working because then its gonna be very difficult to merge later may be first git pull and then git merge 
 
-
-There are couple of ways to fix merge conflicts interfaces, terminal but the best way to fix merge conflicts is to use code editor like vscode 
-
-Undoing in Git:
-so what if we make a mistake what if we acccidentky add something or commit something and we didnt want to do it 
-- We can actually undo our stages or commits
-staged but undo staging stage means git add
-simply write git reset or git reset filename
-
-__Merge Conflicts__
-undo a commit: mean git -m
-git reset HEAD~1
-here HEAD is to get pointer to the last commit and ~1 mean only one commit
-gti log it will show all the commits and at the top it will show hashes then if you want a certain commit to reste copy that sopied_hash
-
-git reset --hard copied_hash ????
-
-
-
-
+__Forking repository:__
 Fork: used to make a complete copy of the other peoples repository
 to get the access of all 
 After forking you will have all the acecss for that repository you can create your own branch and then make changes or anything 
 if you want your changes to be made in the original people repo you created a new pull request
-
 dev does not get deleted 
-Include some basic git Operations:
-https://www.youtube.com/watch?v=RGOj5yH7evk&list=PLLJ1hZKyeCH1I8dP0UNTpWoIhsl6KpVbu&index=2
-https://www.youtube.com/watch?v=Uszj_k0DGsg&list=PLLJ1hZKyeCH1I8dP0UNTpWoIhsl6KpVbu&index=3
-https://www.youtube.com/watch?v=qsTthZi23VE&list=PLLJ1hZKyeCH1I8dP0UNTpWoIhsl6KpVbu&index=5
-
 
 Intermediate git:
 - The perfect commit:
 - git add -p file_name
 - the perfect commit message: subject + body
 - git commit is used to enter commit message
+- git commit -am "added world line the code"
 
-
-
-
-
-Pull requests:
-They are way to communicate about code and review it. The perfect example is when you have finished working on a feature without a pull request you would simply merge your code into main master or some other branch and in some cases this might be totally fine But especially when you are changes are a bit more complex or bit more importatnt you might want to have a second opinion to look over your code. And this is exactly the pull requests are made of. With pull request you can invite other people to review your work and give you a feedback. and after some conversation about the code your reviewer might approve the pull request and merge it into another branch.
-
-Merge conflicts:
-
-When they occur? 
-git merge --abort
-
-
-
-What they actually are?
-How tosolve them?
+__Useful resources:__
+- [Git for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk&list=PLLJ1hZKyeCH1I8dP0UNTpWoIhsl6KpVbu&index=2)
+- [Git for Professionals](https://www.youtube.com/watch?v=Uszj_k0DGsg&list=PLLJ1hZKyeCH1I8dP0UNTpWoIhsl6KpVbu&index=3)
+- [Git for Advanced users](https://www.youtube.com/watch?v=qsTthZi23VE&list=PLLJ1hZKyeCH1I8dP0UNTpWoIhsl6KpVbu&index=5)
