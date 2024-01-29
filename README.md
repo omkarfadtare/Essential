@@ -414,7 +414,7 @@ git reset file_name
 ```
 - If you make a mistake in a commit message or accidentally commit changes, you can undo the commits by running below command in Git Bash:
 ```ruby
-git reset HEAD~1.
+git reset HEAD~1
 ```
 - Here, "HEAD~1" refers to the previous commit. You can specify the number of commits to go back if needed.
 - To find the commit you want to reset to, run below command in Git Bash to view the commit history and find the commit hash (the unique identifier for each commit):
@@ -453,7 +453,50 @@ __11) Forking repository:__
 - If you want your changes to be included in the original project, you can create pull requests from your forked repository to the original repository. The owner of the original repository can then review and merge your changes if they find them valuable.
 
 ### Git commands:
+| Command                                        | Use                                                                                                                                                               |
+|------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| git config --list                              | Used to list all the configuration settings in Git environment                                                                                                    |
+| git config --global user.name                  | Used to check global username                                                                                                                                     |
+| git config --global user.name "user_name"      | Used to set glabal username                                                                                                                                       |
+| git config --global user.email                 | Used to check global email address                                                                                                                                |
+| git config --global user.email "email_address" | Used to set glabal email address                                                                                                                                  |
+| git init                                       | To initialize the current directory as a git repository                                                                                                           |
+| git remote add <remote_name> <remote_url>      | To create a new connection of local repository to a remote repository                                                                                             |
+| git clone <HTTPS web url>                      | To clone a GitHub remote repository into a local machine                                                                                                          |
+| git add <file_name>                            | To stage changes of single file for the next commit                                                                                                               |
+| git add -p                                     | To stage changes of all files for the next commit                                                                                                                 |
+| git add .                                      | Allows you to review changes before staging file for the next commit                                                                                              |
+| git commit -m "Your commit message here"       | To record the changes you've staged (using git add) into the Git repository                                                                                       |
+| git commit -am "Your commit message here"      | Shortcut that combines the actions of both (git add). and (git commit -m "message" ) into a single command                                                        |
+| git push                                       | Uploads the local commits you've made to the remote repository                                                                                                    |
+| git push origin <branch name>                  | Uploads the local commits you have made on a specific branch to the remote repository                                                                             |
+| git status                                     | List which files are staged, unstaged, and untracked.                                                                                                             |
+| git branch                                     | Lists all branches in your repository (* represents the current branch)                                                                                           |
+| git checkout -b <branch name>                  | Create a new branch with specified branch name                                                                                                                    |
+| git checkout <branch name>                     | Used to switch to a specified  branch                                                                                                                             |
+| git branch -d <branch name>                    | Used to delete a specified branch from your local repository                                                                                                      |
+| git branch -D <branch name>                    | Used to delete a specified branch from your local repository (if the branch contains unmerged changes)                                                            |
+| git diff <branch name1>..<branch name2>        | Used to compare the difference between two branches in your Git repository                                                                                        |
+| git merge <branch name>                        | Used to integrate/merge changes from a specified branch into the current branch                                                                                   |
+| git merge --abort                              | Used to abort a merge operation that is currently in progress ( if you encounter conflicts during a merge)                                                        |
+| git log                                        | Displays the entire commit history                                                                                                                                |
+| git log --oneline                              | Displays the commit history in a condensed format, showing the commit hash and the commit message for each commit                                                 |
+| git log -p feature_branch                      | Displays the commit history for a specific branch                                                                                                                 |
+| git pull                                       | Used to fetch and integrate changes from a remote repository into the current branch in your local repository                                                     |
+| git fetch                                      | Used to retrieve changes from a remote repository (it doesn't merge those changes)                                                                                |
+| git fetch --prune                              | Retrieves new changes from the remote repository but also removes any local remote tracking branches that correspond to branches deleted on the remote repository |
+| git reset <file name>                          | Used to unstage (git add) changes for a specific file                                                                                                             |
+| git reset HEAD~1                               | It resets the current branch to the state it was in before the last commit (git commit)                                                                           |
+| git reset --hard <commit_hash>                 | Git resets your current branch and the staging area to match the specified commit                                                                                 |
+| clear                                          | Clears command history in Git Bash                                                                                                                                |
+| pwd                                            | Prints present working directory                                                                                                                                  |
 
+__Tips and Shortcuts:__
+- To clear Git Bash history use (clear) and for terminal use (cls)
+- To paste copied text in Git Bash use (shift + insert)
+- Use (q) to jump off from Git Bash
+- To open terminal in VS Code use (ctrl + `)
+- For snipping tool use (windows + shift + s)
 
 ## Useful resources:
 - [Git for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk&list=PLLJ1hZKyeCH1I8dP0UNTpWoIhsl6KpVbu&index=2)
