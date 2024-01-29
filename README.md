@@ -455,7 +455,7 @@ __11) Forking repository:__
 ### Git commands:
 
 
-### Useful resources:
+## Useful resources:
 - [Git for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk&list=PLLJ1hZKyeCH1I8dP0UNTpWoIhsl6KpVbu&index=2)
 - [Git for Professionals](https://www.youtube.com/watch?v=Uszj_k0DGsg&list=PLLJ1hZKyeCH1I8dP0UNTpWoIhsl6KpVbu&index=3)
 - [Git for Advanced users](https://www.youtube.com/watch?v=qsTthZi23VE&list=PLLJ1hZKyeCH1I8dP0UNTpWoIhsl6KpVbu&index=5)
