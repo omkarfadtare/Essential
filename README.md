@@ -227,9 +227,13 @@ ssh-add E:/file_path
 - It reduces conflicts by isolating changes in separate branches until they are ready to be integrated.
 - It facilitates a more controlled and efficient development process, especially in collaborative environments.
 > Steps to prepare files to Push them from local to remote repository:
+
 __1) git add:__ This command is used to stage changes for the next commit.
+
 __2) git commit:__ This command creates a new commit with the changes that have been staged (added) using "git add".
+
 __3) git push:__ This command is used to upload local repository commits to a remote repository.
+
 > Types of branch:
 - Every Git repository typically contains at least one long-running branch, commonly named "main/master". Additional long-running branches, such as "developement" or "production" or "integration" may exist throughout the entire project lifecycle. These branches often represent different stages in the release or deployment process. It is common to structure branches to mirror the flow of code through various states, such as development, staging, and production.
 - Changes are not directly merged to these branches; instead changes are merged to the "integration" branch, this ensures only tested and reviewed code is introduced into production environments.
