@@ -230,7 +230,7 @@ ssh-add E:/file_path
 
 __1) git add:__ This command is used to stage changes for the next commit.
 
-__2) git commit:__ This command creates a new commit with the changes that have been staged (added) using "git add".
+__2) git commit:__ This command creates a new commit with the changes that have been staged (added) using "git add". An ideal commit message consists of two parts Subject (brief summary of the changes made in the commit) and Body (details about the changes introduced in the commit).
 
 __3) git push:__ This command is used to upload local repository commits to a remote repository.
 
