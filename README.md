@@ -17,7 +17,7 @@
 - You can find path and version of Python using below commands
 ```ruby
 where python
-python--version
+python --version
 ```
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/f2b570b0-fd4b-4590-9341-b337d97c223c)
