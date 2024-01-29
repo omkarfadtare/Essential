@@ -27,7 +27,7 @@
 - To open VS Code in specific folder:
   - Right click
   - Open in terminal
-  - Run `code` command
+  - Run `code .` command
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/2f255810-d9f8-4485-b5fa-b4bf38c70e4c)
 
