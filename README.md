@@ -218,7 +218,7 @@ ssh-add E:/file_path
   - Confirm
 
 ### Git branching simplified:
-- Branching is extremely useful because when building new features for an application that might break your code or are not yet finished, you don't want to save them directly to the main master branch. Instead, you want to work on them in a kind of sandbox, a separate branch. This way, you can write and refine the code until it's correct and in the state you want, before merging it back into the main code base. This approach is especially helpful when multiple people are working on the same repository or when there are numerous branches in progress simultaneously.
+- Branching is extremely useful because when building new features for an application that might break your code or are not yet finished, you don't want to save them directly to the "main/master" branch. Instead, you want to work on them in a kind of sandbox, a separate branch. This way, you can write and refine the code until it's correct and in the state you want, before merging it back into the main code base. This approach is especially helpful when multiple people are working on the same repository or when there are numerous branches in progress simultaneously.
 - Git branching is like creating separate paths to work on different tasks without messing up the main project.
 - It's like having different notebooks for different tasks, such as writing a story or drawing. This way, you can make changes and try out new ideas without affecting the main story until you're sure you want to include them. Once you're happy with your work in a branch, you can bring those changes back into the main project.
 - Developers use branches to isolate changes, experiment with new features, or fix bugs without affecting the main codebase until they are ready to be merged.
@@ -227,40 +227,40 @@ ssh-add E:/file_path
 - It reduces conflicts by isolating changes in separate branches until they are ready to be integrated.
 - It facilitates a more controlled and efficient development process, especially in collaborative environments.
 > Types of branch:
-- Every Git repository typically contains at least one long-running branch, commonly named "main" or "master". Additional long-running branches, such as "developement" or "production" or "integration" may exist throughout the entire project lifecycle. These branches often represent different stages in the release or deployment process. It is common to structure branches to mirror the flow of code through various states, such as development, staging, and production.
+- Every Git repository typically contains at least one long-running branch, commonly named "main/master". Additional long-running branches, such as "developement" or "production" or "integration" may exist throughout the entire project lifecycle. These branches often represent different stages in the release or deployment process. It is common to structure branches to mirror the flow of code through various states, such as development, staging, and production.
 - Changes are not directly merged to these branches; instead changes are merged to the "integration" branch, this ensures only tested and reviewed code is introduced into production environments.
 - This practice aligns with the principles of testing, code review, and release bundling, allowing for controlled and scheduled releases. In contrast to long-running branches, short-lived branches are created for specific purposes and are deleted after integration. Common use cases for short-lived branches include working on new features or bug fixes. These branches provide isolation for changes, allowing developers to collaborate on specific tasks without impacting the main development branches.
 
 __1) Long lived branch:__
-- Long lived branches are branches that exist throughout the entire lifespan of a project. For example main/master branch, developement branch, production branch, integration branch.
+- Long lived branches are branches that exist throughout the entire lifespan of a project. For example "main/master" branch, "developement" branch, "production" branch, "integration" branch.
 - Changes are carefully merged into these branches after thorough testing and review, ensuring that only well-vetted code becomes a permanent part of the project's history.
 
 __2) Short lived branch:__
-- Short lived branches are branches that are created for a specific, temporary purpose and are not intended to exist throughout the entire lifespan of the project. For example feature branch, bug fix branch, release preparation branch, experiment branch.
+- Short lived branches are branches that are created for a specific, temporary purpose and are not intended to exist throughout the entire lifespan of the project. For example "feature_branch", "bug_fix_branch", "release_preparation_branch", "experiment_branch".
 
 __3) Master/Main branch:__
-- The master (or main) branch is typically the default branch in a Git repository. It represents the stable, production-ready version of the code. Your main workspace where all the finished code lives.
+- The "master/main" branch is typically the default branch in a Git repository. It represents the stable, production-ready version of the code. Your main workspace where all the finished code lives.
 
 __4) Feature branch:__
-- Developers create special areas to work on new things called "feature branches." Feature branches are like special areas for working on new features without disturbing the main project.
-- Changes made in a feature branch can be brought back into the main project when ready. It's a way to keep everything neat and tidy while trying out and adding exciting features.
-- When we create a new feature branch, initially, the code on the master branch and this new feature branch will be exactly the same. As you make updates and commit those changes to the feature branch, those updates are only visible in the feature branch. Similarly, when you make updates and commit changes to the master branch, those changes are only seen in the master branch.
+- Developers create special areas to work on new things called "feature_branch". These branches are like special areas for working on new features without disturbing the main project.
+- Changes made in a "feature" branch can be brought back into the main project when ready. It's a way to keep everything neat and tidy while trying out and adding exciting features.
+- When we create a new "feature_branch", initially, the code on the "master" branch and this new "feature_branch" will be exactly the same. As you make updates and commit those changes to the "feature_branch", those updates are only visible in the "feature_branch". Similarly, when you make updates and commit changes to the "master" branch, those changes are only seen in the "master" branch.
 - Each branch keeps track of the changes made on that specific branch. The changes made in one branch are isolated to that branch until they are explicitly merged into another branch.
 
 __5) Bugfix branch:__
-- These are used to fix specific bugs without affecting the main code. Similar to feature branches, bugfix branches are created off the master branch.
+- These are used to fix specific bugs without affecting the main code. Similar to "feature_branch", "bug_fix_branch" are created off the master branch.
 
 __6) Developement branch:__
-- The development branch serves as a central place where developers integrate their changes and collaborate on new features or improvements before these changes are merged into more stable branches, such as a production or main branch.
+- The "development" branch serves as a central place where developers integrate their changes and collaborate on new features or improvements before these changes are merged into more stable branches, such as a "production" or "main/master" branch.
 
 __6) Integration/Staging branch:__
-- Integration/Staging branch generally refers to a branch where different changes from various development branches are brought together, integrated, and tested as a whole before being merged into a more stable branch or released into production.
+- "Integration/Staging" branch generally refers to a branch where different changes from various developement branches are brought together, integrated, and tested as a whole before being merged into a more stable branch or released into production.
 
 __7) Production branch:__
-- Production branch refers to a long-lived branch that represents the stable and reliable version of the software that is deployed to the production environment.
+- "Production" branch refers to a long-lived branch that represents the stable and reliable version of the software that is deployed to the production environment.
 
 __8) Release branch:__
-- These branches are created before releasing a new version for final testing. They are merged into both master and development branches once ready.
+- These branches are created before releasing a new version for final testing. They are merged into both "master/main" and "development" branches once ready.
 
 ![image](https://github.com/omkarfadtare965/Essential/assets/154773580/38bf13f5-9148-4202-808a-1b6b9fe4d433)
 
@@ -303,7 +303,7 @@ git status
 ```ruby
 git add .
 git commit -m "Commit message"
-git push origin -u master
+git push
 ```
 
 __2) Pushing changes madde in local repository to remote repository:__
@@ -311,7 +311,7 @@ __2) Pushing changes madde in local repository to remote repository:__
 ```ruby
 git add .
 git commit -m "commit_message"
-git push origin -u master
+git push
 ```
 
 __3) Clonning remote repository from GitHub account to local machine:__
@@ -331,8 +331,8 @@ git merge
 ```ruby
 git pull
 ```
-- "git fetch" will check are there any new changes in remote repository which are not available in your local repositor. It's more like counting how many changes are avialable.
-- Whereas "git pull" will fetch and merge/update local repository with the aviable changes in remote repository.
+- "git fetch" will check are there any new changes in remote repository which are not available in your local repository. It's more like counting how many changes are avialable.
+- Whereas "git pull" will fetch and merge/update local repository with all the aviable changes in remote repository.
 
 ![image](https://github.com/omkarfadtare/Essential/assets/154773580/03ba2592-fa02-4d29-bc91-5849a9b3eeb9)
 
@@ -342,16 +342,16 @@ __5) Creating a new branch:__
 pwd
 cd /e/Project
 git branch
-git checkout -b bugfix_branch
+git checkout -b bug_fix_branch
 git branch
-git checkout master
-git checkout bugfix_branch
+git checkout main
+git checkout bug_fix_branch
 ```
-- When we create a new "bug_fix" branch, initially, the code on the master branch and this new bug_fix branch will be exactly the same. As you make updates and commit those changes to the bug_fix branch, those updates are only visible in the bug_fix branch. Similarly, when you make updates and commit changes to the master branch, those changes are only seen in the master branch.
+- When we create a new "bug_fix" branch, initially, the code on the "main/master" branch and this new "bug_fix_branch" will be exactly the same. As you make updates and commit those changes to the "bug_fix_branch", those updates are only visible in the "bug_fix_branch". Similarly, when you make updates and commit changes to the "main/master" branch, those changes are only seen in the "main/master" branch.
 
-__6) Merging branch:__
-- Merging in Git is the process of integrating changes from one branch, for example a "feature_branch" into another branch, for example "master" branch. 
-- Run below command in Git Bash to review the differences between branches before merging:
+__6) Merging branch or branch changes:__
+- Merging in Git is the process of integrating changes from one branch, for example a "feature_branch" into another branch, for example "main/master" branch. 
+- Run either of the below commands in Git Bash to review the differences between branches before merging:
 ```ruby
 git diff
 git diff main..feature_branch
@@ -361,32 +361,32 @@ git log -p feature_branch
 - Commit changes on your branch, push them to the remote repository.
 ```ruby
 git add .
-git commit -m "sommit message"
+git commit -m "commit message"
 git push
 ```
 - Create a pull request to propose merging your changes into the target branch from GitHub.
-- Once the pull request is approved and merged, you typically delete the feature branch and switch back to the main branch.
-- You can directly merge changes from feature_branch to main branch by running below Git command to bypass the process of review that pull requests facilitate:
+- Once the pull request is approved and merged, you typically delete the "feature_branch" and switch back to the "main/master" branch.
+- You can directly merge changes from "feature_branch" to "main/master" branch by running below Git command to bypass the process of review that pull requests facilitate:
 ```ruby
 git merge feature_branch
 ```
-- You can directly merge changes from main branch to feature_branch by running below Git command to bypass the process of review that pull requests facilitate:
+- You can directly merge changes from "main/master" branch to "feature_branch" by running below Git command to bypass the process of review that pull requests facilitate:
 ```ruby
 git merge main
 ```
-- However, for collaborative projects or when changes need to be reviewed by others before being merged into the main branch, creating a pull request is the preferred workflow. 
--  Pull requests allow for code review, discussion, and collaboration among team members, ensuring that changes are thoroughly vetted before being merged into the main branch.
+- However, for collaborative projects or when changes need to be reviewed by others before being merged into the "main/master" branch, creating a pull request is the preferred workflow. 
+- Pull requests allow for code review, discussion, and collaboration among team members, ensuring that changes are thoroughly vetted before being merged into the "main/master" branch.
 - In such cases, the merging typically occurs on the hosting platform (like GitHub) after the pull request has been approved.
 
 __7) Pull requests:__
-- Pull requests are a way for team members to discuss and review code changes before they are merged into the main branch. They're like asking for a second opinion on your work.
-- For instance, when you finish working on a feature, instead of directly merging your code into the main branch, you create a pull request. This allows other team members to review your changes, provide feedback, and suggest improvements.
-- Once everyone agrees that the code looks good, the pull request can be approved and the changes are merged into the main branch. It's a collaborative way to ensure code quality and prevent mistakes from being introduced into the project.
+- Pull requests are a way for team members to discuss and review code changes before they are merged into the "main/master" branch. They're like asking for a second opinion on your work.
+- For instance, when you finish working on a feature, instead of directly merging your code into the "main/master" branch, you create a pull request. This allows other team members to review your changes, provide feedback, and suggest improvements.
+- Once everyone agrees that the code looks good, the pull request can be approved and the changes are merged into the "main/master" branch. It's a collaborative way to ensure code quality and prevent mistakes from being introduced into the project.
 
 ![image](https://github.com/omkarfadtare/Essential/assets/154773580/d0e430eb-3332-4c93-be1b-2250b804b35a)
 
-__7) Deleting branch:__
-- If you've merged the changes from "bug_fix_branch" into another branch or master branch, and then deleted "bug_fix_branch" from the remote repository on GitHub, your local repository might still be tracking the branch. This can happen because Git keeps a local reference to the remote branches, untill you explicitly remove them locally.
+__8) Deleting branch:__
+- If you've merged the changes from "bug_fix_branch" into another branch or "main/master" branch, and then deleted "bug_fix_branch" from the remote repository on GitHub, your local repository might still be tracking the branch. This can happen because Git keeps a local reference to the remote branches, untill you explicitly remove them locally.
 - To update your local repository and remove the reference to the deleted branch run below commands in Git Bash:
 ```ruby
 git fetch --prune
@@ -398,8 +398,8 @@ git branch
 git branch -D bug_fix_branch
 ```
 
-__8) Undoing changes in Git:__
-- If you accidentally added files to the staging area (that is git add), you can undo this to unstage the files, by running below command in Git Bash:
+__9) Undoing changes in Git:__
+- If you accidentally added files to the staging area (that is "git add"), you can undo this to unstage the files, by running below command in Git Bash:
 ```ruby
 git reset
 git reset file_name
@@ -418,40 +418,31 @@ git log
 git reset --hard commit_hash
 ``` 
 
-__8) Merge conflicts:__
+__10) Merge conflicts:__
 - Merge conflicts occur when Git is unable to automatically merge changes from different branches. This happens when multiple people modify the same part of a file, or when changes made in one branch conflict with changes made in another branch.
-- Merge conflicts arise when Git cannot determine which changes to keep because of overlapping modifications in different branches.
-- Manual Resolution:
+- Merge conflicts arise when Git cannot determine which changes to keep because of overlapping same modifications in different branches.
+- There are couple of ways to resolve merge conflicts but the best way is to use Merge editor in VS Code:
+- Open the conflicted file(s) in a code editor(VS Code)
+- Locate the conflict markers (<<<<<<<, =======, >>>>>>>) and manually resolve the conflicting changes.
+- Save the files after resolving the conflicts.
+- Stage the resolved files using "git add" and then commit the changes using "git commit -m "commit message"".
 
-Open the conflicted file(s) in a code editor, such as VSCode.
-Locate the conflict markers (<<<<<<<, =======, >>>>>>>) and manually resolve the conflicting changes.
-Save the file(s) after resolving the conflicts.
-Stage the resolved files using git add and then commit the changes.
-If you encounter difficulties resolving conflicts, you can abort the merge using git merge --abort to return to the pre-merge state.
+![image](https://github.com/omkarfadtare/Essential/assets/154773580/fd421449-1fcc-4d4e-9d4a-9ebfdc6edb42)
 
-- When they occur? 
-What they actually are?
-How tosolve them?
+- If you encounter difficulties resolving conflicts, you can abort the merge by running below command in Git Bash to return to the pre-merge state:
+```ruby
 git merge --abort
-Merge conflicts in Git:
-- When you are building your own code writing bunch of code on your own branch, maybe other people are writing code oon their branches and master is getting updated from multiple different places. So its possible that multiple people changes the same files and so sometimes git does not know which code you want to keep or which code you want to get rid of off or which code is reduncted
-- There are couple of ways to fix merge conflicts interfaces, terminal but the best way to fix merge conflicts is to use code editor like vscode 
-Why merging locally wasnt the regular pattern?
-because master gets updated as you are working on the project because may be other people are meging into master and you dont have those changes into your branch but you dont want to get too far behind the master as you are working because then its gonna be very difficult to merge later may be first git pull and then git merge 
+```
+- Merging locally wasn't the regular pattern because the "main/master" branch gets updated with changes from other contributors while you're working on your own branch.
+- It's crucial to stay up-to-date with these changes to avoid falling too far behind, making future merges more challenging. Therefore, it's recommended to regularly pull ("git pull") changes from the main branch into your local branch before merging ("git merge"). This ensures smoother integration of your work with the latest updates from the main branch.
 
-__Forking repository:__
-Fork: used to make a complete copy of the other peoples repository
-to get the access of all 
-After forking you will have all the acecss for that repository you can create your own branch and then make changes or anything 
-if you want your changes to be made in the original people repo you created a new pull request
-dev does not get deleted 
-
-Intermediate git:
-- The perfect commit:
-- git add -p file_name
-- the perfect commit message: subject + body
-- git commit is used to enter commit message
-- git commit -am "added world line the code"
+__11) Forking repository:__
+- Forking a repository on GitHub means copying someone else's project to your own GitHub account. It allows you to experiment and contribute to projects without altering the original code. It enables you to contribute to open-source projects by making changes and suggesting improvements.
+- You can make changes, test new features, and fix bugs and if you want your changes to be part of the original project, you can create pull requests.
+- To fork a repository on GitHub, simply navigate to the repository you want to fork and click the "Fork" button in the top-right corner of the page.
+- Once forked, the repository will be copied to your GitHub account. You can access it from your account's repositories list.
+- After forking, you can make changes to the code, create branches, and experiment with the project as needed.
+- If you want your changes to be included in the original project, you can create pull requests from your forked repository to the original repository. The owner of the original repository can then review and merge your changes if they find them valuable.
 
 __Useful resources:__
 - [Git for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk&list=PLLJ1hZKyeCH1I8dP0UNTpWoIhsl6KpVbu&index=2)
